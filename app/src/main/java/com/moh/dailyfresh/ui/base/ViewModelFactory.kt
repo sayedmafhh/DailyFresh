@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.moh.dailyfresh.repository.DFRepository
+import com.moh.dailyfresh.ui.items.viewmodel.ItemsViewModel
 import com.moh.dailyfresh.ui.viewmodels.MainViewModel
 
 /**
@@ -17,6 +18,9 @@ class ViewModelFactory(private val app: Application) : ViewModelProvider.Factory
         return when {
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(app, repository) as T
+            }
+            modelClass.isAssignableFrom(ItemsViewModel::class.java) -> {
+                ItemsViewModel(app, repository) as T
             }
             else -> {
                 throw IllegalArgumentException("${modelClass.simpleName} is an unknown type of ViewModel")

@@ -3,8 +3,7 @@ package com.moh.dailyfresh.ui.viewmodels
 import android.app.Application
 import androidx.lifecycle.LiveData
 import com.moh.dailyfresh.models.response_maker.ApiResponse
-import com.moh.dailyfresh.models.responses.Category
-import com.moh.dailyfresh.models.responses.Recipe
+import com.moh.dailyfresh.models.responses.category.Recipe
 import com.moh.dailyfresh.repository.DFRepository
 import com.moh.dailyfresh.ui.base.BaseViewModel
 
@@ -14,8 +13,8 @@ import com.moh.dailyfresh.ui.base.BaseViewModel
  */
 class MainViewModel(private val app: Application, private val repository: DFRepository): BaseViewModel(app,repository) {
 
-    fun getRecipe(): LiveData<ApiResponse<Recipe>> {
-        return repository.getContent()
+    fun getRecipeCategory(): LiveData<ApiResponse<Recipe>> {
+        return repository.getContentCategory()
     }
 
 }

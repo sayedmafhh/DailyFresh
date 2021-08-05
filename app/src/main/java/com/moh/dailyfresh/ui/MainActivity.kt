@@ -1,32 +1,35 @@
 package com.moh.dailyfresh.ui
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import com.moh.dailyfresh.R
 import com.moh.dailyfresh.databinding.ActivityMainBinding
 import com.moh.dailyfresh.models.response_maker.ApiErrorResponse
 import com.moh.dailyfresh.models.response_maker.ApiSuccessResponse
 import com.moh.dailyfresh.ui.base.BaseActivity
+import com.moh.dailyfresh.ui.items.activity.RecipeItemsActivity
 import com.moh.dailyfresh.ui.viewmodels.MainViewModel
+import com.moh.dailyfresh.utils.Constants.Companion.EXTRA_TITLE
 
 class MainActivity : BaseActivity() {
 
     private val viewModel: MainViewModel by viewModels { getViewModelFactory!! }
     private lateinit var binding: ActivityMainBinding
+    var title: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        viewModel.getRecipe().observe(this, Observer {
+        viewModel.getRecipeCategory().observe(this, Observer {
             when (it) {
                 is ApiSuccessResponse -> {
                     Log.d("MainApiSuccessResponse", it.body.toString())
+                    val response = it.body
+                    title = response.categories!![0].title.toString()
                 }
                 is ApiErrorResponse -> {
                     Log.d("Main.ApiErrorResponse", it.errorMessage + " ----" + it.errorCode)
@@ -34,6 +37,15 @@ class MainActivity : BaseActivity() {
                 }
             }
         })
-        binding.tvHello.text = "Salam Syed!"
+        binding.btnNewActivity.setOnClickListener {
+            startNewActivity(title)
+        }
+    }
+
+    private fun startNewActivity(title: String) {
+        val intent = Intent(this, RecipeItemsActivity::class.java).apply {
+            putExtra(EXTRA_TITLE, title)
+        }
+        startActivity(intent)
     }
 }

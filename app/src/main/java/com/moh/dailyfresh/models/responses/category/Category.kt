@@ -1,4 +1,4 @@
-package com.moh.dailyfresh.models.responses
+package com.moh.dailyfresh.models.responses.category
 
 data class Category(
     val imageUrl: String?,
