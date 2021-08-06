@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyFresh">
-        <activity android:name=".ui.items.activity.RecipeItemsActivity"></activity>
+        <activity android:name=".ui.items.activity.RecipeItemDetailsActivity"></activity>
+        <activity android:name=".ui.items.activity.RecipeItemsActivity" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

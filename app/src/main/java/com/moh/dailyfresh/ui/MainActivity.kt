@@ -11,6 +11,7 @@ import com.moh.dailyfresh.databinding.ActivityMainBinding
 import com.moh.dailyfresh.models.response_maker.ApiErrorResponse
 import com.moh.dailyfresh.models.response_maker.ApiSuccessResponse
 import com.moh.dailyfresh.ui.base.BaseActivity
+import com.moh.dailyfresh.ui.items.activity.RecipeItemDetailsActivity
 import com.moh.dailyfresh.ui.items.activity.RecipeItemsActivity
 import com.moh.dailyfresh.ui.viewmodels.MainViewModel
 import com.moh.dailyfresh.utils.Constants.Companion.EXTRA_TITLE
@@ -43,7 +44,7 @@ class MainActivity : BaseActivity() {
     }
 
     private fun startNewActivity(title: String) {
-        val intent = Intent(this, RecipeItemsActivity::class.java).apply {
+        val intent = Intent(this, RecipeItemDetailsActivity::class.java).apply {
             putExtra(EXTRA_TITLE, title)
         }
         startActivity(intent)

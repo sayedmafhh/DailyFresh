@@ -3,6 +3,7 @@ package com.moh.dailyfresh.repository
 import androidx.lifecycle.LiveData
 import com.moh.dailyfresh.models.response_maker.ApiResponse
 import com.moh.dailyfresh.models.responses.category.Recipe
+import com.moh.dailyfresh.models.responses.details.Itemdetails
 import com.moh.dailyfresh.models.responses.items.Items
 import com.moh.dailyfresh.network.DFServiceProvider
 
@@ -17,5 +18,9 @@ class DFRepository {
 
     fun getRecipes(query: String, page: String): LiveData<ApiResponse<Items>> {
         return DFServiceProvider.instance.getRecipes(query, page)
+    }
+
+    fun getDetails(id: String): LiveData<ApiResponse<Itemdetails>> {
+        return DFServiceProvider.instance.getItemDetails(id)
     }
 }
