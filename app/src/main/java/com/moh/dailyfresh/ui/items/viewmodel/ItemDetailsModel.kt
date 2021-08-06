@@ -9,7 +9,6 @@ import com.moh.dailyfresh.ui.base.BaseViewModel
 
 class ItemDetailsModel(private val app: Application, private val repository: DFRepository): BaseViewModel(app,repository) {
 
-
     fun getDetails(id: String): LiveData<ApiResponse<Itemdetails>> {
         return repository.getDetails(id)
     }

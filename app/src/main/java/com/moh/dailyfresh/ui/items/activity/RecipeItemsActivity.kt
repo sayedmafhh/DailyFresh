@@ -22,10 +22,11 @@ class RecipeItemsActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe_item)
 
-        val query: String? = intent.getStringExtra(EXTRA_TITLE)
-        val page: String = "1"
+        //if intent.getStringExtra(EXTRA_TITLE) is null then set empty string. -- force  !!
+        val query = intent.getStringExtra(EXTRA_TITLE) ?: ""
+        val page = "1"
 
-        viewModel.getRecipes(query!!, page).observe(this, Observer {
+        viewModel.getRecipes(query, page).observe(this, Observer {
             when(it) {
                 is ApiSuccessResponse -> {
                     Log.d("RecipeItemsApiSuccess", it.body.toString())
