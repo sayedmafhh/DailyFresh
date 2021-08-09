@@ -12,6 +12,7 @@ import com.moh.dailyfresh.models.response_maker.ApiSuccessResponse
 import com.moh.dailyfresh.models.responses.details.Itemdetails
 import com.moh.dailyfresh.ui.base.BaseActivity
 import com.moh.dailyfresh.ui.items.viewmodel.ItemDetailsModel
+import com.moh.dailyfresh.utils.Constants.Companion.EXTRA_ID
 
 class RecipeItemDetailsActivity : BaseActivity() {
     private val viewModel: ItemDetailsModel by viewModels { getViewModelFactory!! }
@@ -21,7 +22,7 @@ class RecipeItemDetailsActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_recipe_item_details)
 
-        val id = "484d98"
+        val id = intent.getStringExtra(EXTRA_ID) ?: ""
         viewModel.getDetails(id).observe(this, androidx.lifecycle.Observer {
 
             when (it) {
@@ -43,6 +44,7 @@ class RecipeItemDetailsActivity : BaseActivity() {
             .centerCrop()
             .into(binding.ivItem)
         binding.tvPublisher.text = "Publisher : " + response.recipe.publisher
+        binding.tvTitle.text = response.recipe.title
 
         var ingrediant = ""
         response.recipe.ingredients.forEach {
@@ -50,6 +52,7 @@ class RecipeItemDetailsActivity : BaseActivity() {
         }
 
         binding.tvIngredient.text = ingrediant
+
 
     }
 

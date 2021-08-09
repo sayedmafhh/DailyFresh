@@ -1,4 +1,4 @@
-package com.moh.dailyfresh.ui.viewmodels
+package com.moh.dailyfresh.ui.home.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.LiveData
