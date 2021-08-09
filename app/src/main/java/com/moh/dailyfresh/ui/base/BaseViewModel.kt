@@ -12,7 +12,7 @@ import com.moh.dailyfresh.repository.DFRepository
  */
 open class BaseViewModel(
     private var app: Application,
-    private var dfRepository: DFRepository
+    private var dfRepository: DFRepository? = null
     ): AndroidViewModel(app) {
     fun getBaseContext(): Context = app.baseContext
 }
