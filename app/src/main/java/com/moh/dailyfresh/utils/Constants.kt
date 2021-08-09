@@ -8,6 +8,7 @@ class Constants {
     companion object {
         const val BASE_URL = "https://recipesapi.herokuapp.com/"
         const val EXTRA_TITLE = "extra_recipe_title"
+        const val DELAY_DURATION: Long = 500
 
     }
 }

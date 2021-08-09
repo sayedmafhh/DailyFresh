@@ -15,7 +15,11 @@
         android:theme="@style/Theme.DailyFresh">
         <activity android:name=".ui.items.activity.RecipeItemDetailsActivity"></activity>
         <activity android:name=".ui.items.activity.RecipeItemsActivity" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.MainActivity"/>
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
