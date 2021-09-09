@@ -1,4 +1,4 @@
-package com.thetrusttech.getacarparts.ui.viewmodels
+package com.thetrusttech.getacarparts.ui.items.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.LiveData

@@ -3,7 +3,7 @@ package com.thetrusttech.getacarparts.ui.splash
 import android.content.Intent
 import android.os.Bundle
 import com.thetrusttech.getacarparts.R
-import com.thetrusttech.getacarparts.ui.MainActivity
+import com.thetrusttech.getacarparts.ui.items.activity.MainActivity
 import com.thetrusttech.getacarparts.ui.base.BaseActivity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking

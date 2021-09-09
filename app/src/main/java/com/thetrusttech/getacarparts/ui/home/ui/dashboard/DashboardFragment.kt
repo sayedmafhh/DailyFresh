@@ -8,8 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.thetrusttech.getacarparts.ui.home.R
-import com.thetrusttech.getacarparts.ui.home.databinding.FragmentDashboardBinding
+import com.thetrusttech.getacarparts.databinding.FragmentDashboardBinding
 
 class DashboardFragment : Fragment() {
 

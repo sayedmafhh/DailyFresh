@@ -1,4 +1,4 @@
-package com.thetrusttech.getacarparts.ui
+package com.thetrusttech.getacarparts.ui.items.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,8 +11,7 @@ import com.thetrusttech.getacarparts.databinding.ActivityMainBinding
 import com.thetrusttech.getacarparts.models.response_maker.ApiErrorResponse
 import com.thetrusttech.getacarparts.models.response_maker.ApiSuccessResponse
 import com.thetrusttech.getacarparts.ui.base.BaseActivity
-import com.thetrusttech.getacarparts.ui.items.activity.RecipeItemDetailsActivity
-import com.thetrusttech.getacarparts.ui.viewmodels.MainViewModel
+import com.thetrusttech.getacarparts.ui.items.viewmodel.MainViewModel
 import com.thetrusttech.getacarparts.utils.Constants.Companion.EXTRA_TITLE
 
 class MainActivity : BaseActivity() {

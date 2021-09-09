@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.thetrusttech.getacarparts.repository.GCPRepository
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemDetailsModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemsViewModel
-import com.thetrusttech.getacarparts.ui.viewmodels.MainViewModel
+import com.thetrusttech.getacarparts.ui.items.viewmodel.MainViewModel
 
 /**
  * Created by SObaidullah on 7/24/2021.

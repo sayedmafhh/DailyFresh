@@ -18,7 +18,7 @@
             android:label="@string/title_activity_home"></activity>
         <activity android:name=".ui.items.activity.RecipeItemDetailsActivity" />
         <activity android:name=".ui.items.activity.RecipeItemsActivity" />
-        <activity android:name=".ui.MainActivity" />
+        <activity android:name=".ui.items.activity.MainActivity" />
         <activity
             android:name=".ui.splash.SplashActivity"
             android:screenOrientation="portrait"
