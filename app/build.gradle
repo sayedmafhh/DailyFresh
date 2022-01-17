@@ -39,9 +39,13 @@ android {
 }
 
 dependencies {
+
+    //navigation component
+    def nav_version = "2.3.5"
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
     implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.0'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.3.0'
     def lifecycle_version = "2.4.0-alpha02"
     def arch_version = "2.1.0"
     // ViewModel

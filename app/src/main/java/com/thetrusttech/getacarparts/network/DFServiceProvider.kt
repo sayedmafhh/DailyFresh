@@ -7,17 +7,17 @@ package com.thetrusttech.getacarparts.network
 class DFServiceProvider {
 
     companion object{
-        var _instance: IAPIDF? = null
+        var _instance: TTTIAPI? = null
 
-        val instance: IAPIDF
+        val instance: TTTIAPI
             get() {
                 if (_instance == null)
                     _instance = getNetworkServices()
                 return _instance!!
             }
 
-        private fun getNetworkServices(): IAPIDF? {
-            return DFRetrofitInstanceProvider.instanceLiveDataRetrofit?.create(IAPIDF::class.java)
+        private fun getNetworkServices(): TTTIAPI? {
+            return DFRetrofitInstanceProvider.instanceLiveDataRetrofit?.create(TTTIAPI::class.java)
         }
     }
 

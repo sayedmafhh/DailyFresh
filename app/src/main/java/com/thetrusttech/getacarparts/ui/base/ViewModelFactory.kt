@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.thetrusttech.getacarparts.repository.GCPRepository
+import com.thetrusttech.getacarparts.ui.home.ui.home.HomeViewModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemDetailsModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemsViewModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.MainViewModel
@@ -25,6 +26,9 @@ class ViewModelFactory(private val app: Application) : ViewModelProvider.Factory
             }
             modelClass.isAssignableFrom(ItemDetailsModel::class.java) -> {
                 ItemDetailsModel(app, repository) as T
+            }
+            modelClass.isAssignableFrom(HomeViewModel::class.java) -> {
+                HomeViewModel(app, repository) as T
             }
 
             else -> {

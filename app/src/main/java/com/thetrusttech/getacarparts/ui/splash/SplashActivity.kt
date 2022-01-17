@@ -5,6 +5,7 @@ import android.os.Bundle
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.ui.items.activity.MainActivity
 import com.thetrusttech.getacarparts.ui.base.BaseActivity
+import com.thetrusttech.getacarparts.ui.home.HomeActivity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 
@@ -21,7 +22,7 @@ class SplashActivity : BaseActivity() {
     }
 
     fun newActivity() {
-        val intent = Intent( this, MainActivity::class.java)
+        val intent = Intent( this, HomeActivity::class.java)
         startActivity(intent)
         finish()
     }
