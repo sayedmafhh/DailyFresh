@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.moh.dailyfresh.repository.DFRepository
 import com.moh.dailyfresh.ui.items.viewmodel.ItemDetailsModel
 import com.moh.dailyfresh.ui.items.viewmodel.ItemsViewModel
-import com.moh.dailyfresh.ui.viewmodels.MainViewModel
+import com.moh.dailyfresh.ui.home.viewmodels.MainViewModel
 
 /**
  * Created by SObaidullah on 7/24/2021.
