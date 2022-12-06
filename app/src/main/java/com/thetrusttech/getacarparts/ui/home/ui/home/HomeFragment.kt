@@ -68,7 +68,7 @@ class HomeFragment : BaseFragment() {
         binding.viewTopBannerLayout.myPager.apply {
             adapter = carouselAdapter
         }
-        binding.viewTopBannerLayout.
+        //binding.viewTopBannerLayout.
         /*
         binding.rvUserQuotation.apply {
             layoutManager = LinearLayoutManager(context)
