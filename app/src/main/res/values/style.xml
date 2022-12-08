@@ -3,4 +3,21 @@
     <style name="outline_button" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="strokeColor">@color/red_faded</item>
     </style>
+
+    <style name="auth_fields_layout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxCornerRadiusBottomEnd">@dimen/corner_radius_5</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/corner_radius_5</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/corner_radius_5</item>
+        <item name="boxCornerRadiusTopStart">@dimen/corner_radius_5</item>
+        <item name="android:layout_margin">@dimen/margin_large</item>
+    </style>
+
+    <style name="auth_field" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:background">#EEE</item>
+    </style>
+
+
 </resources>

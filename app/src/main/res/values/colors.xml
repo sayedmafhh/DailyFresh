@@ -11,4 +11,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF001F</color>
     <color name="red_faded">#A1FF001F</color>
+    <color name="signin_edittext_border">@color/black</color>
 </resources>

@@ -6,6 +6,7 @@ import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.ui.items.activity.MainActivity
 import com.thetrusttech.getacarparts.ui.base.BaseActivity
 import com.thetrusttech.getacarparts.ui.home.HomeActivity
+import com.thetrusttech.getacarparts.ui.home.ui.playground.SigninActivity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 
@@ -16,13 +17,13 @@ class SplashActivity : BaseActivity() {
         setContentView(R.layout.activity_splash)
 
         runBlocking {
-            delay(8000)
+            delay(1000)
             newActivity()
         }
     }
 
     fun newActivity() {
-        val intent = Intent( this, HomeActivity::class.java)
+        val intent = Intent( this, SigninActivity::class.java)
         startActivity(intent)
         finish()
     }

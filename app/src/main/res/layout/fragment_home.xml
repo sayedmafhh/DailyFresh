@@ -121,32 +121,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tv_sell_item" />
-<!--
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layout_edt_username"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_32"
-                android:hint="Username"
-                app:boxCornerRadiusBottomEnd="@dimen/corner_radius_5"
-                app:boxCornerRadiusBottomStart="@dimen/corner_radius_5"
-                app:boxCornerRadiusTopEnd="@dimen/corner_radius_5"
-                app:boxCornerRadiusTopStart="@dimen/corner_radius_5"
-                app:hintTextColor="@color/signin_edittext_border"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_header_txt_signin">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/edt_username"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ellipsize="end"
-                    android:maxLines="1"
-                    android:textSize="@dimen/text_size_14" />
-
-            </com.google.android.material.textfield.TextInputLayout>-->
 
 
 
