@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.ui.playground.SigninActivity">
+    tools:context=".ui.home.ui.auth.login.SigninActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layout_edt_username"

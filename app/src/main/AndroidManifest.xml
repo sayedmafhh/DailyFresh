@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.thetrusttech.getacarparts" >
+    package="com.thetrusttech.getacarparts">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -8,19 +8,20 @@
     <application
         android:name=".DFApplication"
         android:allowBackup="true"
-        android:icon="@drawable/car_parts_logo"
+        android:icon="@drawable/ic_splash_islam_bg"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DailyFresh" >
         <activity
-            android:name=".ui.home.ui.playground.SigninActivity"
+            android:name=".ui.home.ui.auth.login.SigninActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.HomeActivity"
             android:configChanges="uiMode"
             android:label="@string/title_activity_home" />
         <activity android:name=".ui.items.activity.RecipeItemDetailsActivity" />
+        <activity android:name=".ui.home.ui.auth.signup.RegisterActivity" />
+        <activity android:name=".ui.home.ui.auth.forgot.ForgotMyPasswordActivity" />
         <activity android:name=".ui.items.activity.RecipeItemsActivity" />
         <activity android:name=".ui.items.activity.MainActivity" />
         <activity
