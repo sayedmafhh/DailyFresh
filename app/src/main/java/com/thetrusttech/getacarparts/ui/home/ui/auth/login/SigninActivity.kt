@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import android.widget.ImageButton
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import android.widget.Button
@@ -47,17 +48,16 @@ class SigninActivity : AppCompatActivity() {
         var txtGoToRegister = findViewById<TextView>(R.id.gotoRegister)
         var txtGoToForgot = findViewById<TextView>(R.id.forgotpassword)
 
+        setToolbar()
 
         txtGoToRegister.setOnClickListener {
             val intent = Intent( this, RegisterActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
         txtGoToForgot.setOnClickListener {
             val intent = Intent( this, ForgotMyPasswordActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
         changeStatusBarColor(
@@ -67,6 +67,11 @@ class SigninActivity : AppCompatActivity() {
             ), false
         )
 
+    }
+
+    private fun setToolbar() {
+        var txtTitle = findViewById<TextView>(R.id.topText)
+        txtTitle.text = getString(R.string.txt_signin_title)
     }
 
 }

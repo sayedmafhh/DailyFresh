@@ -6,4 +6,9 @@
     <string name="title_notifications">Notifications</string>
     <string name="txt_password">Password</string>
     <string name="txt_username">Username</string>
+    <string name="txt_signin_title">Already Have an Account?</string>
+    <string name="txt_signup_title">Don\'t have an Account? Sign up</string>
+    <string name="txt_forgot_pass">FORGOT PASSWORD?</string>
+    <string name="txt_or">OR</string>
+    <string name="txt_new_user">New User? Register Now</string>
 </resources>
