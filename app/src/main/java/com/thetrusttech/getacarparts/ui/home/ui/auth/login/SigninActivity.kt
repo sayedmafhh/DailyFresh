@@ -19,9 +19,9 @@ import com.thetrusttech.getacarparts.utils.changeStatusBarColor
 
 class SigninActivity : AppCompatActivity() {
 
-    private lateinit var inputEmail : EditText
-    private lateinit var inputPassword : EditText
-    private lateinit var btnLogin : Button
+    private lateinit var inputEmail: EditText
+    private lateinit var inputPassword: EditText
+    private lateinit var btnLogin: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,27 +36,29 @@ class SigninActivity : AppCompatActivity() {
             val email = inputEmail.text.toString().trim()
             val password = inputPassword.text.toString().trim()
 
-            if (email.isEmpty()){
+            if (email.isEmpty()) {
                 inputEmail.error = "Email Required"
             }
-             if (password.isEmpty()){
+
+            if (password.isEmpty()) {
                 inputPassword.error = "Password Required"
             }
+
         }
 
-       // var layout = findViewById<TextInputLayout>(R.id.layout_edt_username)
+        // var layout = findViewById<TextInputLayout>(R.id.layout_edt_username)
         var txtGoToRegister = findViewById<TextView>(R.id.gotoRegister)
         var txtGoToForgot = findViewById<TextView>(R.id.forgotpassword)
 
         setToolbar()
 
         txtGoToRegister.setOnClickListener {
-            val intent = Intent( this, RegisterActivity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
         txtGoToForgot.setOnClickListener {
-            val intent = Intent( this, ForgotMyPasswordActivity::class.java)
+            val intent = Intent(this, ForgotMyPasswordActivity::class.java)
             startActivity(intent)
         }
 

@@ -5,84 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/topView"
-        android:layout_width="0dp"
-        android:layout_height="150dp"
-        android:background="@color/colorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_auth_header"/>
 
-    <View
-        android:id="@+id/view3"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="@drawable/wave__1_"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_person_white" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
-    <TextView
-        android:id="@+id/topText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
-        android:text="Don't Have an Account? Sign Up"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.185"
-        app:layout_constraintStart_toStartOf="@+id/topView"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <View-->
+<!--        android:id="@+id/topView"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:background="@color/colorPrimary"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <View-->
+<!--        android:id="@+id/view3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="@drawable/wave__1_"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/topView" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_person_white" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/topText"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginTop="48dp"-->
+<!--        android:text="Don't Have an Account? Sign Up"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/imageView"-->
+<!--        app:layout_constraintHorizontal_bias="0.185"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/topView"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 
     <EditText
         android:id="@+id/inputUsername"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_32"
         android:background="@drawable/round_border"
         android:drawableStart="@drawable/ic_person_un"
-        android:drawablePadding="16dp"
+        android:drawablePadding="@dimen/padding_16"
         android:ems="10"
         android:hint="Username"
         android:inputType="text"
-        android:padding="16dp"
+        android:padding="@dimen/padding_8"
+        android:textSize="@dimen/text_size_14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/topView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/inputEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_32"
         android:background="@drawable/round_border"
         android:drawableStart="@drawable/ic_email"
-        android:drawablePadding="16dp"
+        android:drawablePadding="@dimen/padding_16"
         android:ems="10"
         android:hint="Email"
         android:inputType="text"
-        android:padding="16dp"
+        android:padding="@dimen/padding_8"
+        android:textSize="@dimen/text_size_14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputUsername" />
@@ -91,16 +101,17 @@
         android:id="@+id/inputPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginTop="@dimen/padding_16"
+        android:layout_marginEnd="@dimen/margin_32"
         android:background="@drawable/round_border"
         android:drawableStart="@drawable/ic_lock"
-        android:drawablePadding="16dp"
+        android:drawablePadding="@dimen/padding_16"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:padding="16dp"
+        android:padding="@dimen/padding_8"
+        android:textSize="@dimen/text_size_14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
@@ -109,16 +120,17 @@
         android:id="@+id/inputconfirmPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_32"
         android:background="@drawable/round_border"
         android:drawableStart="@drawable/ic_lock"
-        android:drawablePadding="16dp"
+        android:drawablePadding="@dimen/padding_16"
         android:ems="10"
         android:hint="ConfirmPassword"
         android:inputType="textPassword"
-        android:padding="16dp"
+        android:padding="@dimen/padding_8"
+        android:textSize="@dimen/text_size_14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
@@ -127,13 +139,13 @@
         android:id="@+id/btnSignup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="@dimen/margin_64"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginEnd="@dimen/margin_64"
         android:background="@drawable/round_bg"
         android:text="SIGNUP"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_14"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -143,16 +155,17 @@
         android:id="@+id/gotoLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:text="Already Have an Account? Sign In"
+        android:layout_marginStart="@dimen/margin_32"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginEnd="@dimen/margin_32"
+        android:text="@string/txt_already_account"
         android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
+        android:textSize="@dimen/text_size_14"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSignup" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

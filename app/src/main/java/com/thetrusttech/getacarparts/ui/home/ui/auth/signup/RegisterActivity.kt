@@ -9,8 +9,10 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.ui.home.ui.auth.login.SigninActivity
+import com.thetrusttech.getacarparts.utils.changeStatusBarColor
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -44,9 +46,18 @@ class RegisterActivity : AppCompatActivity() {
             }
             if (password.isEmpty()){
                 inputPassword.error = "Password Required"
+            }else {
+                if (password.length < 8)
+                    inputPassword.error = "Password minimum character should be 8"
             }
             if (confirmpassword.isEmpty()){
                 inputconfirmPassword.error = "Confirm Password Required"
+            }else {
+                if (!password.equals(confirmpassword)){
+                    inputconfirmPassword.error = "Password does not match!"
+                }/*else {
+                    inputconfirmPassword.error = "Password does not match!"
+                }*/
             }
         }
 
@@ -64,13 +75,19 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun setToolbar() {
         var txtTitle = findViewById<TextView>(R.id.topText)
-        //var btnBackArrow = findViewById<ImageButton>(R.id.ib_back_button)
-        //btnBackArrow.visibility = View.GONE
+        var btnBackArrow = findViewById<ImageButton>(R.id.ib_back_button)
+        btnBackArrow.visibility = View.VISIBLE
 
         txtTitle.text = getString(R.string.txt_signup_title)
-        /*
         btnBackArrow.setOnClickListener {
             onBackPressed()
-        }*/
+        }
+
+        changeStatusBarColor(
+            ContextCompat.getColor(
+                applicationContext,
+                R.color.colorPrimary
+            ), false
+        )
     }
 }
