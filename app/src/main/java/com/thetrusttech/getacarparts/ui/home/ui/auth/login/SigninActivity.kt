@@ -1,12 +1,17 @@
 package com.thetrusttech.getacarparts.ui.home.ui.auth.login
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.ui.home.ui.auth.forgot.ForgotMyPasswordActivity
 import com.thetrusttech.getacarparts.ui.home.ui.auth.signup.RegisterActivity
+import com.thetrusttech.getacarparts.utils.changeStatusBarColor
 
 class SigninActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,5 +33,13 @@ class SigninActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        changeStatusBarColor(
+            ContextCompat.getColor(
+                applicationContext,
+                R.color.colorPrimary
+            ), false
+        )
     }
+
 }
