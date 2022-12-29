@@ -15,4 +15,10 @@
     <color name="red">#FF001F</color>
     <color name="red_faded">#A1FF001F</color>
     <color name="signin_edittext_border">@color/black</color>
+
+    <color name="bottom_nav_background">#FEDBD8</color>
+    <color name="bottom_nav_item">#8C706D</color>
+    <color name="bottom_nav_selected_item">#220006</color>
+    <color name="fragment_bg_color">#FDF8F4</color>
+    <color name="underline">#D8D6D6</color>
 </resources>
