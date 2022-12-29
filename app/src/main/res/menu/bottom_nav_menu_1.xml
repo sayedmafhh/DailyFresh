@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/quranFragment"
+        android:title="Quran" />
+    <item
+        android:id="@+id/prayerTimesFragment"
+        android:title="Prayer Times" />
+    <!--<item
+        android:id="@+id/qiblaFragment"
+        android:title="Qibla" />-->
+    <item
+        android:id="@+id/zikrFragment"
+        android:title="Zikr" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+</menu>

@@ -14,4 +14,15 @@
     <string name="txt_new_user">New User? Register Now</string>
     <string name="txt_already_account">Already Have an Account? Sign In</string>
     <string name="txt_confirm_email">Confirm your email and we\'ll send the instruction.</string>
+
+    <string-array name="surah_names">
+        <item>Al-Fatiha</item>
+        <item>Al-Baqarah</item>
+        <item>Al-Imran</item>
+        <item>An-Nisa</item>
+        <item>Al-Maidah</item>
+        <item>Al-An\'am</item>
+        <item>Al-A\'raf</item>
+        <item>Al-Anfal</item>
+    </string-array>
 </resources>
