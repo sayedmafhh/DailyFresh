@@ -131,4 +131,37 @@
         <item>Al-Falaq</item>
         <item>An-Nas</item>
     </string-array>
+
+    <string-array name="parah_list">
+        <item>Alif laam meem</item>
+        <item>Sayaqulu</item>
+        <item>Tilka r Rusulu</item>
+        <item>Lan Tana Loo</item>
+        <item>Wal Mohsanat</item>
+        <item>La Yahubbullah</item>
+        <item>Wa Iza Samiu</item>
+        <item>Wa Lau Annana</item>
+        <item>Qalal Malao</item>
+        <item>Wa A\’lamu</item>
+        <item>Yatazeroon</item>
+        <item>Wa Mamin Da\’abat</item>
+        <item>Wa Ma Ubiroo</item>
+        <item>Rubama</item>
+        <item>Subhanallahzi</item>
+        <item>Qal Alam</item>
+        <item>Aqtarabo</item>
+        <item>Qadd Aflaha</item>
+        <item>Wa Qalallazina</item>
+        <item>A\’man Khalaq</item>
+        <item>Utlu Ma Oohi</item>
+        <item>Wa Manyaqnut</item>
+        <item>Wa Mali</item>
+        <item>Faman Azlam</item>
+        <item>Elahe Yuruddo</item>
+        <item>Ha\’a Meem</item>
+        <item>Qala Fama Khatbukum</item>
+        <item>Qadd Sami Allah</item>
+        <item>Tabarakallazi</item>
+        <item>Amma Yatasa\’aloon</item>
+    </string-array>
 </resources>
