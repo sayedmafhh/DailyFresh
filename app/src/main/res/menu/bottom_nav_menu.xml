@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--
 
     <item
         android:id="@+id/navigation_home"
@@ -15,5 +16,30 @@
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
+-->
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/quranFragment"
+        android:icon="@drawable/ic_quran"
+        android:title="Quran" />
+    <item
+        android:id="@+id/prayerTimesFragment"
+        android:icon="@drawable/ic_prayers"
+        android:title="Prayer Times" />
+    <!--<item
+        android:id="@+id/qiblaFragment"
+        android:title="Qibla" />-->
+    <item
+        android:id="@+id/zikrFragment"
+        android:icon="@drawable/ic_zikr"
+        android:title="Zikr" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
 
 </menu>

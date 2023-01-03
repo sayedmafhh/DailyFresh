@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#FF018786</color>
+    <color name="colorSecondaryLight">#FFFFFFFF</color>
     <color name="colorPrimaryDark">#FF018786</color>
     <color name="colorAccent">#FF018786</color>
+    <color name="colorLightTeal">#90018786</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -17,8 +19,9 @@
     <color name="signin_edittext_border">@color/black</color>
 
     <color name="bottom_nav_background">#FEDBD8</color>
-    <color name="bottom_nav_item">#8C706D</color>
-    <color name="bottom_nav_selected_item">#220006</color>
+    <color name="bottom_nav_item">#C2C2C2</color>
+    <color name="skip_button">#9C9B9B</color>
+    <color name="bottom_nav_selected_item">@color/colorPrimary</color>
     <color name="fragment_bg_color">#FDF8F4</color>
     <color name="underline">#D8D6D6</color>
 </resources>

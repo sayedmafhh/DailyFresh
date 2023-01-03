@@ -51,21 +51,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_64"
             android:layout_marginTop="@dimen/margin_32"
             android:layout_marginEnd="@dimen/margin_64"
-            android:background="@drawable/round_bg"
+            app:cornerRadius="25dp"
             android:text="LOGIN"
+            android:padding="16dp"
             android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:textSize="@dimen/text_size_14"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSkip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_64"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_64"
+            app:cornerRadius="25dp"
+            android:padding="16dp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:text="Skip"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
         <TextView
             android:id="@+id/forgotpassword"
@@ -80,7 +99,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/btnSkip" />
 
         <TextView
             android:id="@+id/textView3"

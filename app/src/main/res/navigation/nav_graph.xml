@@ -7,32 +7,32 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.bottomnav.HomeFragment"
+        android:name="com.thetrusttech.getacarparts.ui.prayertime.PrayerTimesFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home_1" />
+        tools:layout="@layout/fragment_prayer_times" />
     <fragment
         android:id="@+id/prayerTimesFragment"
-        android:name="com.example.bottomnav.PrayerTimesFragment"
+        android:name="com.thetrusttech.getacarparts.ui.prayertime.PrayerTimesFragment"
         android:label="fragment_prayer_times"
         tools:layout="@layout/fragment_prayer_times" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.bottomnav.ProfileFragment"
+        android:name="com.thetrusttech.getacarparts.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/qiblaFragment"
-        android:name="com.example.bottomnav.QiblaFragment"
+        android:name="com.thetrusttech.getacarparts.ui.qibla.QiblaFragment"
         android:label="fragment_qibla"
         tools:layout="@layout/fragment_qibla" />
     <fragment
         android:id="@+id/quranFragment"
-        android:name="com.example.bottomnav.QuranFragment"
+        android:name="com.thetrusttech.getacarparts.ui.quran.QuranFragment"
         android:label="fragment_quran"
         tools:layout="@layout/fragment_quran" />
     <fragment
         android:id="@+id/zikrFragment"
-        android:name="com.example.bottomnav.ZikrFragment"
+        android:name="com.thetrusttech.getacarparts.ui.zikr.ZikrFragment"
         android:label="fragment_zikr"
         tools:layout="@layout/fragment_zikr" />
 </navigation>

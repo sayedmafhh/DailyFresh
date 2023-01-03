@@ -17,8 +17,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.home.HomeActivity"
-            android:configChanges="uiMode"
             android:label="@string/title_activity_home" />
+
         <activity android:name=".ui.items.activity.RecipeItemDetailsActivity" />
         <activity android:name=".ui.home.ui.auth.signup.RegisterActivity" />
         <activity android:name=".ui.home.ui.auth.forgot.ForgotMyPasswordActivity" />

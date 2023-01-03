@@ -13,8 +13,10 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.thetrusttech.getacarparts.R
+import com.thetrusttech.getacarparts.ui.home.HomeActivity
 import com.thetrusttech.getacarparts.ui.home.ui.auth.forgot.ForgotMyPasswordActivity
 import com.thetrusttech.getacarparts.ui.home.ui.auth.signup.RegisterActivity
+import com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment
 import com.thetrusttech.getacarparts.utils.changeStatusBarColor
 
 class SigninActivity : AppCompatActivity() {
@@ -22,6 +24,7 @@ class SigninActivity : AppCompatActivity() {
     private lateinit var inputEmail: EditText
     private lateinit var inputPassword: EditText
     private lateinit var btnLogin: Button
+    private lateinit var btnSkip: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +33,7 @@ class SigninActivity : AppCompatActivity() {
         inputEmail = findViewById(R.id.inputEmail)
         inputPassword = findViewById(R.id.inputPassword)
         btnLogin = findViewById(R.id.btnLogin)
+        btnSkip = findViewById(R.id.btnSkip)
 
         btnLogin.setOnClickListener {
 
@@ -44,6 +48,11 @@ class SigninActivity : AppCompatActivity() {
                 inputPassword.error = "Password Required"
             }
 
+        }
+        btnSkip.setOnClickListener {
+            val intent = Intent( this, HomeActivity::class.java)
+            startActivity(intent)
+            finish()
         }
 
         // var layout = findViewById<TextInputLayout>(R.id.layout_edt_username)
