@@ -25,5 +25,665 @@
     "total_verses" : 176,
     "url" : "https://gpsarab.com/shop11/en/content/11-list-of-surahs-in-the-holy-quran#:~:text=List%20of%20surahs%20in%20the%20Holy%20Qur%27an%20,%20%20Women%20%2037%20more%20rows%20",
     "url1" : "https://quran.com/"
+  },{
+    "id": 5,
+    "name" : "Al-Maidah",
+    "name-ar" : "المَائدة",
+    "description" : "The Table Spread",
+    "total_verses" : 120
+  },{
+    "id": 6,
+    "name" : "Al-An\'am",
+    "name-ar" : "الأنعَام",
+    "description" : "The Cattle",
+    "total_verses" : 165
+  },{
+    "id": 7,
+    "name" : "Al-A\'raf",
+    "name-ar" : "الأعرَاف",
+    "description" : "The Elevated Places",
+    "total_verses" : 206
+  },{
+    "id": 8,
+    "name" : "Al-Anfal",
+    "name-ar" : "الأنفَال",
+    "description" : "The Spoils Of War",
+    "total_verses" : 75
+  },{
+    "id": 9,
+    "name" : "At-Taubah",
+    "name-ar" : "التوبَة",
+    "description" : "The Repentance",
+    "total_verses" : 129
+  },{
+    "id": 10,
+    "name" : "Yunus",
+    "name-ar" : "يُونس",
+    "description" : "Johan",
+    "total_verses" : 109
+  },{
+    "id": 11,
+    "name" : "Hud",
+    "name-ar" : "هُود",
+    "description" : "Hud",
+    "total_verses" : 123
+  },{
+    "id": 12,
+    "name" : "Yusuf",
+    "name-ar" : "يُوسُف",
+    "description" : "Joseph",
+    "total_verses" : 111
+  },{
+    "id": 13,
+    "name" : "Ar-Ra\’d",
+    "name-ar" : "الرَّعْد",
+    "description" : "The Thunder",
+    "total_verses" : 43
+  },{
+    "id": 14,
+    "name" : "Ibrahim",
+    "name-ar" : "إبراهِيم",
+    "description" : "Abraham",
+    "total_verses" : 52
+  },{
+    "id": 15,
+    "name" : "Al-Hijr",
+    "name-ar" : "الحِجْر",
+    "description" : "The Rocky Tract",
+    "total_verses" : 99
+  },{
+    "id": 16,
+    "name" : "An-Nahl",
+    "name-ar" : "النَّحْل",
+    "description" : "The Bee",
+    "total_verses" : 128
+  },{
+    "id": 17,
+    "name" : "Al-Isra",
+    "name-ar" : "الإسْرَاء",
+    "description" : "The Night Journey",
+    "total_verses" : 111
+  },{
+    "id": 18,
+    "name" : "Al-Kahf",
+    "name-ar" : "الكهْف",
+    "description" : "The Cave",
+    "total_verses" : 110
+  },{
+    "id": 19,
+    "name" : "Maryam",
+    "name-ar" : "مَريَم",
+    "description" : "Mary",
+    "total_verses" : 98
+  },{
+    "id": 20,
+    "name" : "Ta-Ha",
+    "name-ar" : "طه",
+    "description" : "Ta-Ha",
+    "total_verses" : 135
+  },{
+    "id": 21,
+    "name" : "Al-Anbiya",
+    "name-ar" : "الأنبيَاء",
+    "description" : "The Prophets",
+    "total_verses" : 112
+  },{
+    "id": 22,
+    "name" : "Al-Haj",
+    "name-ar" : "الحَج",
+    "description" : "The Pilgrimage",
+    "total_verses" : 78
+  },{
+    "id": 23,
+    "name" : "Al-Mu\’minun",
+    "name-ar" : "المُؤمنون",
+    "description" : "The Believers",
+    "total_verses" : 118
+  },{
+    "id": 24,
+    "name" : "An-Nur",
+    "name-ar" : "النُّور",
+    "description" : "The Light",
+    "total_verses" : 64
+  },{
+    "id": 25,
+    "name" : "Al-Furqan",
+    "name-ar" : "الفُرْقان",
+    "description" : "The Criterion",
+    "total_verses" : 77
+  },{
+    "id": 26,
+    "name" : "Ash-Shu\’ara",
+    "name-ar" : "الشُّعَرَاء",
+    "description" : "The Poets",
+    "total_verses" : 227
+  },{
+    "id": 27,
+    "name" : "An-Naml",
+    "name-ar" : "النَّمْل",
+    "description" : "The Ant",
+    "total_verses" : 93
+  },{
+    "id": 28,
+    "name" : "Al-Qasas",
+    "name-ar" : "القَصَص",
+    "description" : "The Stories",
+    "total_verses" : 60
+  },{
+    "id": 29,
+    "name" : "Al-Ankabut",
+    "name-ar" : "العَنكبوت",
+    "description" : "The Spider",
+    "total_verses" : 69
+  },{
+    "id": 30,
+    "name" : "Ar-Rum",
+    "name-ar" : "الرُّوم",
+    "description" : "The Romans",
+    "total_verses" : 60
+  },{
+    "id": 31,
+    "name" : "Luqman",
+    "name-ar" : "لقمَان",
+    "description" : "Luqman",
+    "total_verses" : 34
+  },{
+    "id": 32,
+    "name" : "As-Sajdah",
+    "name-ar" : "السَّجدَة",
+    "description" : "The Prostration",
+    "total_verses" : 30
+  },{
+    "id": 33,
+    "name" : "Al-Ahzab",
+    "name-ar" : "الأحزَاب",
+    "description" : "The Combined Forces",
+    "total_verses" : 73
+  },{
+    "id": 34,
+    "name" : "Saba",
+    "name-ar" : "سَبَأ",
+    "description" : "Sheba",
+    "total_verses" : 54
+  },{
+    "id": 35,
+    "name" : "Al-Fatir",
+    "name-ar" : "فَاطِر",
+    "description" : "Originator",
+    "total_verses" : 73
+  },{
+    "id": 36,
+    "name" : "Ya-Sin",
+    "name-ar" : "يس",
+    "description" : "Ya Sin",
+    "total_verses" : 83
+  },{
+    "id": 37,
+    "name" : "As-Saffah",
+    "name-ar" : "الصَّافات",
+    "description" : "Those Who Set The Ranks",
+    "total_verses" : 182
+  },{
+    "id": 38,
+    "name" : "Sad",
+    "name-ar" : "ص",
+    "description" : "The Letter Saad",
+    "total_verses" : 88
+  },{
+    "id": 39,
+    "name" : "Az-Zumar",
+    "name-ar" : "الزُّمَر",
+    "description" : "The Troops",
+    "total_verses" : 75
+  },{
+    "id": 40,
+    "name" : "Ghafir",
+    "name-ar" : "غَافِر",
+    "description" : "The Forgiver",
+    "total_verses" : 85
+  },{
+    "id": 41,
+    "name" : "Fusilat",
+    "name-ar" : "فُصِّلَتْ",
+    "description" : "Explained In Detail",
+    "total_verses" : 54
+  },{
+    "id": 42,
+    "name" : "Ash-Shura",
+    "name-ar" : "الشُّورَى",
+    "description" : "The Consultation",
+    "total_verses" : 53
+  },{
+    "id": 43,
+    "name" : "Az-Zukhruf",
+    "name-ar" : "الزُّخْرُف",
+    "description" : "The Embellishment",
+    "total_verses" : 89
+  },{
+    "id": 44,
+    "name" : "Ad-Dukhan",
+    "name-ar" : "الدُّخان",
+    "description" : "The Evident Smoke",
+    "total_verses" : 59
+  },{
+    "id": 45,
+    "name" : "Al-Jathiyah",
+    "name-ar" : "الجاثِية",
+    "description" : "The Kneeling",
+    "total_verses" : 37
+  },{
+    "id": 46,
+    "name" : "Al-Ahqaf",
+    "name-ar" : "الأحقاف",
+    "description" : "The Sandhills",
+    "total_verses" : 35
+  },{
+    "id": 47,
+    "name" : "Muhammad",
+    "name-ar" : "مُحَمّد",
+    "description" : "Muhammad",
+    "total_verses" : 38
+  },{
+    "id": 48,
+    "name" : "Al-Fat\’h",
+    "name-ar" : "الفَتْح",
+    "description" : "The Victory",
+    "total_verses" : 29
+  },{
+    "id": 49,
+    "name" : "Al-Hujurat",
+    "name-ar" : "الحُجُرات",
+    "description" : "The Chambers",
+    "total_verses" : 18
+  },{
+    "id": 50,
+    "name" : "Qaf",
+    "name-ar" : "ق",
+    "description" : "Qaf",
+    "total_verses" : 45
+  },{
+    "id": 51,
+    "name" : "Adz-Dzariyah",
+    "name-ar" : "الذَّاريَات",
+    "description" : "The Scatterers",
+    "total_verses" : 60
+  },{
+    "id": 52,
+    "name" : "At-Tur",
+    "name-ar" : "الطُّور",
+    "description" : "The Mountain",
+    "total_verses" : 49
+  },{
+    "id": 53,
+    "name" : "An-Najm",
+    "name-ar" : "النَّجْم",
+    "description" : "The Star",
+    "total_verses" : 62
+  },{
+    "id": 54,
+    "name" : "Al-Qamar",
+    "name-ar" : "القَمَر",
+    "description" : "The Moon",
+    "total_verses" : 55
+  },{
+    "id": 55,
+    "name" : "Ar-Rahman",
+    "name-ar" : "الرَّحمن",
+    "description" : "The Merciful",
+    "total_verses" : 78
+  },{
+    "id": 56,
+    "name" : "Al-Waqi\’ah",
+    "name-ar" : "الواقِعَة",
+    "description" : "That Which is Coming",
+    "total_verses" : 96
+  },{
+    "id": 57,
+    "name" : "Al-Hadid",
+    "name-ar" : "الحَديد",
+    "description" : "The Iron",
+    "total_verses" : 29
+  },{
+    "id": 58,
+    "name" : "Al-Mujadilah",
+    "name-ar" : "المُجادَلة",
+    "description" : "She Who Pleaded",
+    "total_verses" : 22
+  },{
+    "id": 59,
+    "name" : "Al-Hashr",
+    "name-ar" : "الحَشْر",
+    "description" : "The Exile",
+    "total_verses" : 24
+  },{
+    "id": 60,
+    "name" : "Al-Mumtahanah",
+    "name-ar" : "المُمتَحَنة",
+    "description" : "She Who is Tested",
+  "total_verses" : 13
+  },{
+    "id": 61,
+    "name" : "As-Saf",
+    "name-ar" : "الصَّف",
+    "description" : "The Ranks",
+    "total_verses" : 14
+  },{
+    "id": 62,
+    "name" : "Al-Jum\’ah",
+    "name-ar" : "الجُّمُعة",
+    "description" : "The Day of Congregation",
+    "total_verses" : 11
+  },{
+    "id": 63,
+    "name" : "Al-Munafiqun",
+    "name-ar" : "المُنافِقُون",
+    "description" : "The Hypocrites",
+    "total_verses" : 11
+  },{
+    "id": 64,
+    "name" : "At-Taghabun",
+    "name-ar" : "التَّغابُن",
+    "description" : "The Cheating",
+    "total_verses" : 18
+  },{
+    "id": 65,
+    "name" : "At-Talaq",
+    "name-ar" : "الطَّلاق",
+    "description" : "The Divorce",
+    "total_verses" : 12
+  },{
+    "id": 66,
+    "name" : "At-Tahrim",
+    "name-ar" : "التَّحْريم",
+    "description" : "The Prohibition",
+    "total_verses" : 12
+  },{
+    "id": 67,
+    "name" : "Al-Mulk",
+    "name-ar" : "المُلْك",
+    "description" : "The Kingdom",
+    "total_verses" : 14
+  },{
+    "id": 68,
+    "name" : "Al-Qalam",
+    "name-ar" : "القَلـََم",
+    "description" : "The Pen",
+    "total_verses" : 14
+  },{
+    "id": 69,
+    "name" : "Al-Haqqah",
+    "name-ar" : "الحَاقّـَة",
+    "description" : "The Inevitable",
+    "total_verses" : 14
+  },{
+    "id": 70,
+    "name" : "Al-Ma\’arij",
+    "name-ar" : "المَعارِج",
+    "description" : "The Ladders",
+    "total_verses" : 14
+  },{
+    "id": 71,
+    "name" : "Nuh",
+    "name-ar" : "نُوح",
+    "description" : "Noah",
+    "total_verses" : 14
+  },{
+    "id": 72,
+    "name" : "Al-Jinn",
+    "name-ar" : "الجِنّ",
+    "description" : "The Jinn",
+    "total_verses" : 14
+  },{
+    "id": 73,
+    "name" : "Al-Muzammil",
+    "name-ar" : "المُزَّمّـِل",
+    "description" : "The Mantled One",
+    "total_verses" : 20
+  },{
+    "id": 74,
+    "name" : "Al-Mudaththir",
+    "name-ar" : "المُدَّثــِّر",
+    "description" : "The Clothed One",
+    "total_verses" : 56
+  },{
+    "id": 75,
+    "name" : "Al-Qiyamah",
+    "name-ar" : "القِيامَة",
+    "description" : "The Resurrection",
+    "total_verses" : 40
+  },{
+    "id": 76,
+    "name" : "Al-Insan",
+    "name-ar" : "الإنسان",
+    "description" : "The Man",
+    "total_verses" : 31
+  },{
+    "id": 77,
+    "name" : "Al-Mursalat",
+    "name-ar" : "المُرسَلات",
+    "description" : "The Emissaries",
+    "total_verses" : 50
+  },{
+    "id": 78,
+    "name" : "An-Naba",
+    "name-ar" : "النـَّبأ",
+    "description" : "The Tidings",
+    "total_verses" : 40
+  },{
+    "id": 79,
+    "name" : "An-Nazi\’at",
+    "name-ar" : "النـّازِعات",
+    "description" : "Those Who Pull Out",
+    "total_verses" : 46
+  },{
+    "id": 80,
+    "name" : "Abasa",
+    "name-ar" : "عَبَس",
+    "description" : "He Frowned",
+    "total_verses" : 42
+  },{
+    "id": 81,
+    "name" : "At-Takwir",
+    "name-ar" : "التـَّكْوير",
+    "description" : "The Cessation",
+    "total_verses" : 29
+  },{
+    "id": 82,
+    "name" : "Al-Infitar",
+    "name-ar" : "الإنفِطار",
+    "description" : "The Cleaving Asunder",
+    "total_verses" : 19
+  },{
+    "id": 83,
+    "name" : "Al-Mutaffifin",
+    "name-ar" : "المُطـَفِّفين",
+    "description" : "The Defrauders",
+    "total_verses" : 36
+  },{
+    "id": 84,
+    "name" : "Al-Inshiqaq",
+    "name-ar" : "الإنشِقاق",
+    "description" : "The Rending",
+    "total_verses" : 25
+  },{
+    "id": 85,
+    "name" : "Al-Buruj",
+    "name-ar" : "البُروج",
+    "description" : "the Constellations",
+    "total_verses" : 22
+  },{
+    "id": 86,
+    "name" : "At-Tariq",
+    "name-ar" : "الطّارق",
+    "description" : "The Night-Comer",
+    "total_verses" : 17
+  },{
+    "id": 87,
+    "name" : "Al-A\’la",
+    "name-ar" : "الأعلی",
+    "description" : "The Most High",
+    "total_verses" : 19
+  },{
+    "id": 88,
+    "name" : "Al-Ghashiyah",
+    "name-ar" : "الغاشِيَة",
+    "description" : "The Overwhelming Calamity",
+    "total_verses" : 26
+  },{
+    "id": 89,
+    "name" : "Al-Fajr",
+    "name-ar" : "الفَجْر",
+    "description" : "The Dawn",
+    "total_verses" : 30
+  },{
+    "id": 90,
+    "name" : "Al-Balad",
+    "name-ar" : "البَـلـَد",
+    "description" : "The City",
+    "total_verses" : 20
+  },{
+    "id": 91,
+    "name" : "Ash-Shams",
+    "name-ar" : "الشــَّمْس",
+    "description" : "The Sun",
+    "total_verses" : 15
+  },{
+    "id": 92,
+    "name" : "Al-Layl",
+    "name-ar" : "اللـَّيل",
+    "description" : "The Night",
+    "total_verses" : 21
+  },{
+    "id": 93,
+    "name" : "Adh-Dhuha",
+    "name-ar" : "الضُّحی",
+    "description" : "The Early Hours",
+    "total_verses" : 11
+  },{
+    "id": 94,
+    "name" : "Al-Inshirah",
+    "name-ar" : "الشَّرْح",
+    "description" : "The Expansion",
+    "total_verses" : 8
+  },{
+    "id": 95,
+    "name" : "At-Tin",
+    "name-ar" : "التـِّين",
+    "description" : "The Fig",
+    "total_verses" : 8
+  },{
+    "id": 96,
+    "name" : "Al-\‘Alaq",
+    "name-ar" : "العَلـَق",
+    "description" : "The Clot",
+    "total_verses" : 19
+  },{
+    "id": 97,
+    "name" : "Al-Qadar",
+    "name-ar" : "القـَدر",
+    "description" : "The Majesty",
+    "total_verses" : 5
+  },{
+    "id": 98,
+    "name" : "Al-Bayinah",
+    "name-ar" : "البَيِّنَة",
+    "description" : "The Proof",
+    "total_verses" : 8
+  },{
+    "id": 99,
+    "name" : "Az-Zalzalah",
+    "name-ar" : "الزلزَلة",
+    "description" : "The Shaking",
+    "total_verses" : 8
+  },{
+    "id": 100,
+    "name" : "Al-\‘Adiyah",
+    "name-ar" : "العَادِيات",
+    "description" : "The Assaulters",
+    "total_verses" : 11
+  },{
+    "id": 101,
+    "name" : "Al-Qari\’ah",
+    "name-ar" : "القارِعَة",
+    "description" : "The Terrible Calamity",
+    "total_verses" : 11
+  },{
+    "id": 102,
+    "name" : "At-Takathur",
+    "name-ar" : "التَكاثـُر",
+    "description" : "Worldly Gain",
+    "total_verses" : 8
+  },{
+    "id": 103,
+    "name" : "Al-\‘Asr",
+    "name-ar" : "العَصْر",
+    "description" : "Time",
+    "total_verses" : 3
+  },{
+    "id": 104,
+    "name" : "Al-Humazah",
+    "name-ar" : "الهُمَزَة",
+    "description" : "The Slanderer",
+    "total_verses" : 9
+  },{
+    "id": 105,
+    "name" : "Al-Fil",
+    "name-ar" : "الفِيل",
+    "description" : "The Elephant",
+    "total_verses" : 5
+  },{
+    "id": 106,
+    "name" : "Quraish",
+    "name-ar" : "قـُرَيْش",
+    "description" : "The Quraish",
+    "total_verses" : 4
+  },{
+    "id": 107,
+    "name" : "Al-Ma\’un",
+    "name-ar" : "المَاعُون",
+    "description" : "The Daily Necessaries",
+    "total_verses" : 7
+  },{
+    "id": 108,
+    "name" : "Al-Kauthar",
+    "name-ar" : "الكَوْثَر",
+    "description" : "Abundance",
+    "total_verses" : 3
+  },{
+    "id": 109,
+    "name" : "Al-Kafirun",
+    "name-ar" : "الكَافِرُون",
+    "description" : "The Unbelievers",
+    "total_verses" : 6
+  },{
+    "id": 110,
+    "name" : "An-Nasr",
+    "name-ar" : "النـَّصر",
+    "description" : "The Help",
+    "total_verses" : 3
+  },{
+    "id": 111,
+    "name" : "Al-Masad",
+    "name-ar" : "المَسَد",
+    "description" : "The Palm Fibre",
+    "total_verses" : 5
+  },{
+    "id": 112,
+    "name" : "Al-Ikhlas",
+    "name-ar" : "الإخْلَاص",
+    "description" : "The Unity",
+    "total_verses" : 4
+  },{
+    "id": 113,
+    "name" : "Al-Falaq",
+    "name-ar" : "الفَلَق",
+    "description" : "The Daybreak",
+    "total_verses" : 5
+  },{
+    "id": 114,
+    "name" : "An-Nas",
+    "name-ar" : "النَّاس",
+    "description" : "The Men",
+    "total_verses" : 6
   }]
 }
