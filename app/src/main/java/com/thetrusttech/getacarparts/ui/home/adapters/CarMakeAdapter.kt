@@ -5,7 +5,7 @@ import com.bumptech.glide.Glide
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.databinding.LayoutAdapterCarMakeBinding
 import com.thetrusttech.getacarparts.models.responses.make.CarMake
-import com.thetrusttech.getacarparts.ui.base.RecyclerAdapter
+import com.thetrusttech.getacarparts.base.RecyclerAdapter
 import com.thetrusttech.getacarparts.utils.Constants.Companion.BASE_URL
 
 class CarMakeAdapter(private val context: Context) : RecyclerAdapter<CarMake, LayoutAdapterCarMakeBinding>() {

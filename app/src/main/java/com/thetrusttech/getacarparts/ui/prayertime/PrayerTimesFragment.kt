@@ -9,12 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.databinding.ListItemBinding
-import com.thetrusttech.getacarparts.ui.base.RecyclerAdapter
+import com.thetrusttech.getacarparts.base.RecyclerAdapter
 
 
 class PrayerTimesFragment : Fragment() {
 
-    private lateinit var prayerAdapter: PrayerAdapter
+    //private lateinit var prayerAdapter: PrayerAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,7 +26,7 @@ class PrayerTimesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        prayerAdapter = PrayerAdapter()
+        /*prayerAdapter = PrayerAdapter()
 
         var rv = view.findViewById<RecyclerView>(R.id.rv_prayer_time)
         rv.apply {
@@ -35,11 +35,11 @@ class PrayerTimesFragment : Fragment() {
         }
 
         val arr = resources.getStringArray(R.array.surah_names).toList()
-        prayerAdapter.setItem(arr)
+        prayerAdapter.setItem(arr)*/
 
     }
 
-    class PrayerAdapter : RecyclerAdapter<String, ListItemBinding>() {
+    /*class PrayerAdapter : RecyclerAdapter<String, ListItemBinding>() {
         override fun getLayoutResId(): Int {
             return R.layout.list_item
         }
@@ -54,5 +54,5 @@ class PrayerTimesFragment : Fragment() {
         override fun setCurrentPage(pageName: String) {
         }
 
-    }
+    }*/
 }

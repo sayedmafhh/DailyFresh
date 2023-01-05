@@ -3,7 +3,7 @@ package com.thetrusttech.getacarparts.ui
 import android.content.Context
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.databinding.ListItemBinding
-import com.thetrusttech.getacarparts.ui.base.RecyclerAdapter
+import com.thetrusttech.getacarparts.base.RecyclerAdapter
 import com.thetrusttech.getacarparts.ui.quran.Surah
 
 class QuranAdapter(val context: Context) : RecyclerAdapter<Surah, ListItemBinding>() {

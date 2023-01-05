@@ -11,24 +11,36 @@
         android:icon="@drawable/ic_splash_islam_bg"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.DailyFresh" >
+        android:theme="@style/Theme.DailyFresh">
         <activity
             android:name=".ui.home.ui.auth.login.SigninActivity"
             android:exported="false" />
         <activity
             android:name=".ui.home.HomeActivity"
+            android:exported="false"
             android:label="@string/title_activity_home" />
 
-        <activity android:name=".ui.items.activity.RecipeItemDetailsActivity" />
-        <activity android:name=".ui.home.ui.auth.signup.RegisterActivity" />
-        <activity android:name=".ui.home.ui.auth.forgot.ForgotMyPasswordActivity" />
-        <activity android:name=".ui.items.activity.RecipeItemsActivity" />
-        <activity android:name=".ui.items.activity.MainActivity" />
+        <activity
+            android:name=".ui.items.activity.RecipeItemDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.ui.auth.signup.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.home.ui.auth.forgot.ForgotMyPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.items.activity.RecipeItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.items.activity.MainActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.splash.SplashActivity"
             android:configChanges="uiMode"
+            android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/SplashTheme" >
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

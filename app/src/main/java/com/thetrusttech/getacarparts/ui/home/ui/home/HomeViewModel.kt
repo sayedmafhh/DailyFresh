@@ -9,7 +9,7 @@ import com.thetrusttech.getacarparts.models.responses.category.Recipe
 import com.thetrusttech.getacarparts.models.responses.make.CarMake
 import com.thetrusttech.getacarparts.models.responses.model.CarModel
 import com.thetrusttech.getacarparts.repository.GCPRepository
-import com.thetrusttech.getacarparts.ui.base.BaseViewModel
+import com.thetrusttech.getacarparts.base.BaseViewModel
 
 class HomeViewModel(private val app: Application, private val repository: GCPRepository): BaseViewModel(app,repository) {
 //class HomeViewModel : ViewModel() {

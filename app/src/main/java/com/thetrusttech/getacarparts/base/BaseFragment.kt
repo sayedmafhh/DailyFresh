@@ -1,4 +1,4 @@
-package com.thetrusttech.getacarparts.ui.base
+package com.thetrusttech.getacarparts.base
 
 import androidx.fragment.app.Fragment
 

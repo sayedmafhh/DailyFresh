@@ -9,7 +9,7 @@ import com.thetrusttech.getacarparts.databinding.ActivityRecipeItemDetailsBindin
 import com.thetrusttech.getacarparts.models.response_maker.ApiErrorResponse
 import com.thetrusttech.getacarparts.models.response_maker.ApiSuccessResponse
 import com.thetrusttech.getacarparts.models.responses.details.Itemdetails
-import com.thetrusttech.getacarparts.ui.base.BaseActivity
+import com.thetrusttech.getacarparts.base.BaseActivity
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemDetailsModel
 
 class RecipeItemDetailsActivity : BaseActivity() {

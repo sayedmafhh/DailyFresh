@@ -7,7 +7,7 @@ import com.thetrusttech.getacarparts.databinding.LayoutAdapterCarMakeBinding
 import com.thetrusttech.getacarparts.databinding.LayoutAdapterCarModelBinding
 import com.thetrusttech.getacarparts.models.responses.make.CarMake
 import com.thetrusttech.getacarparts.models.responses.model.CarModel
-import com.thetrusttech.getacarparts.ui.base.RecyclerAdapter
+import com.thetrusttech.getacarparts.base.RecyclerAdapter
 import com.thetrusttech.getacarparts.utils.Constants
 
 class CarModelAdapter(private val context: Context) : RecyclerAdapter<CarModel, LayoutAdapterCarModelBinding>() {

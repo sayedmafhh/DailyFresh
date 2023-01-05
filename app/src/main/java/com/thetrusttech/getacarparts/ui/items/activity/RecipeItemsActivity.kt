@@ -8,7 +8,7 @@ import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.databinding.ActivityMainBinding
 import com.thetrusttech.getacarparts.models.response_maker.ApiErrorResponse
 import com.thetrusttech.getacarparts.models.response_maker.ApiSuccessResponse
-import com.thetrusttech.getacarparts.ui.base.BaseActivity
+import com.thetrusttech.getacarparts.base.BaseActivity
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemsViewModel
 import com.thetrusttech.getacarparts.utils.Constants.Companion.EXTRA_TITLE
 

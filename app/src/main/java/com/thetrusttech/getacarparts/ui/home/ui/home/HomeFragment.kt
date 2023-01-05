@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.thetrusttech.getacarparts.databinding.FragmentHomeBinding
 import com.thetrusttech.getacarparts.models.response_maker.ApiErrorResponse
 import com.thetrusttech.getacarparts.models.response_maker.ApiSuccessResponse
-import com.thetrusttech.getacarparts.ui.base.BaseFragment
+import com.thetrusttech.getacarparts.base.BaseFragment
+import com.thetrusttech.getacarparts.databinding.FragmentHomeCarBinding
 import com.thetrusttech.getacarparts.ui.home.adapters.CarMakeAdapter
 import com.thetrusttech.getacarparts.ui.home.adapters.CarModelAdapter
 import com.thetrusttech.getacarparts.ui.home.adapters.CarouselAdapter
@@ -20,7 +21,7 @@ class HomeFragment : BaseFragment() {
 
     private val homeViewModel: HomeViewModel by viewModels { getViewModelFactory!! }
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentHomeCarBinding? = null
 
     private val binding get() = _binding!!
 
@@ -39,7 +40,7 @@ class HomeFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentHomeCarBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         initRecyclerview()
