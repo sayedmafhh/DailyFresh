@@ -1,1 +1,123 @@
-{}
+{
+  "juz": [{
+    "id" : 1,
+    "name" : "Alif Lam Meem",
+    "name-ar" : "آلم"
+  },{
+    "id" : 2,
+    "name" : "Sayaqool",
+    "name-ar" : "سيقول السفهاء"
+  },{
+    "id" : 3,
+    "name" : "Tilkal Rusul",
+    "name-ar" : "تلك الرسل"
+  },{
+    "id" : 4,
+    "name" : "Lan Tana Loo",
+    "name-ar" : "لن تنالوا"
+  },{
+    "id" : 5,
+    "name" : "Wal Mohsanat",
+    "name-ar" : "والمحصنات"
+  },{
+    "id" : 6,
+    "name" : "La Yuhibbullah",
+    "name-ar" : "لا يحب الله"
+  },{
+    "id" : 7,
+    "name" : "Wa Iza Samiu",
+    "name-ar" : "وإذا سمعوا"
+  },{
+    "id" : 8,
+    "name" : "Wa Lau Annana",
+    "name-ar" : "ولو أننا"
+  },{
+    "id" : 9,
+    "name" : "Qalal Malao",
+    "name-ar" : "قال الملأ"
+  },{
+    "id" : 10,
+    "name" : "Wa A'lamu",
+    "name-ar" : "واعلموا"
+  },{
+    "id" : 11,
+    "name" : "Yatazeroon",
+    "name-ar" : "يعتذرون"
+  },{
+    "id" : 12,
+    "name" : "Wa Mamin Da'abat",
+    "name-ar" : "ومامن دابة"
+  },{
+    "id" : 13,
+    "name" : "Wa Ma Ubrioo",
+    "name-ar" : "وما أبرئ"
+  },{
+    "id" : 14,
+    "name" : "Rubama",
+    "name-ar" : "ربما"
+  },{
+    "id" : 15,
+    "name" : "Subhanallazi",
+    "name-ar" : "سبحٰن الذیٓ"
+  },{
+    "id" : 16,
+    "name" : "Qal Alam",
+    "name-ar" : "قال ألم"
+  },{
+    "id" : 17,
+    "name" : "Aqtarabo",
+    "name-ar" : "اقترب للناس"
+  },{
+    "id" : 18,
+    "name" : "Qadd Aflaha",
+    "name-ar" : "قد أفلح"
+  },{
+    "id" : 19,
+    "name" : "Wa Qalallazina",
+    "name-ar" : "وقال الذين"
+  },{
+    "id" : 20,
+    "name" : "A'man Khalaq",
+    "name-ar" : "امن خلق"
+  },{
+    "id" : 21,
+    "name" : "Utlu Ma Oohi",
+    "name-ar" : "اتل مآ اوحی"
+  },{
+    "id" :22,
+    "name" : "Wa Manyaqnut",
+    "name-ar" : "ومن يقنت"
+  },{
+    "id" : 23,
+    "name" : "Wa Mali",
+    "name-ar" : "ومالی"
+  },{
+    "id" : 24,
+    "name" : "Faman Azlam",
+    "name-ar" : "فمن أظلم"
+  },{
+    "id" : 25,
+    "name" : "Elahe Yuruddo",
+    "name-ar" : "إليه يرد"
+  },{
+    "id" : 26,
+    "name" : "Ha'a Meem",
+    "name-ar" : "حـم"
+  },{
+    "id" : 27,
+    "name" : "Qala Fama Khatbukum",
+    "name-ar" : "قال فما خطبكم"
+  },{
+    "id" : 28,
+    "name" : "Qadd Sami Allah",
+    "name-ar" : "قد سمع اللہ"
+  },{
+    "id" : 29,
+    "name" : "Tabarakallazi",
+    "name-ar" : "تبٰرک الذی"
+  },{
+    "id" : 30,
+    "name" : "Amma Yatasa'aloon",
+    "name-ar" : "عمّ"
+  }]
+}
