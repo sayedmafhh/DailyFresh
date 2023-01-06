@@ -1,21 +1,27 @@
 package com.thetrusttech.getacarparts.utils
 
+import android.annotation.SuppressLint
 import android.content.Context
 
-/**
- * Created by SObaidullah on 7/24/2021.
- * Copyright (c) 2021 ANGUS SYSTEMS
- */
 class GlobalRuntimeVariableProvider {
     companion object {
-        private var appContext: Context? = null
+        @SuppressLint("StaticFieldLeak")
+        private var context: Context? = null
+        private var baseUrl: String? = null
 
-        fun setContext(aContext: Context) {
-            appContext = aContext
+        fun setContext(context: Context) {
+            this.context = context
         }
 
-        fun getContext(): Context? {
-            return appContext
+        fun getContext(): Context {
+            return context!!
+        }
+
+        fun getBaseUrl(): String{
+            return baseUrl!!
+        }
+        fun setBaseUrl(baseUrl: String){
+            this.baseUrl = baseUrl
         }
     }
 }

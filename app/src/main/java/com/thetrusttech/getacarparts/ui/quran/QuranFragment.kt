@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.asgl.sdk.common.CommonUitlities
 import com.google.android.material.tabs.TabLayout
-import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.databinding.FragmentQuranBinding
 import com.thetrusttech.getacarparts.ui.QuranAdapter
 import com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment.Companion.TAG
@@ -17,16 +17,13 @@ import com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment.Companion.TAG
 class QuranFragment : Fragment() {
 
     private lateinit var quranAdapter: QuranAdapter
-    var surahList: MutableList<String> = mutableListOf()
-    var itemList: MutableList<Surah> = mutableListOf()
-    var parahList: MutableList<Surah> = mutableListOf()
 
     private lateinit var binding: FragmentQuranBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentQuranBinding.inflate(inflater, container, false)
         return binding.root
@@ -36,6 +33,7 @@ class QuranFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setRecyclerview()
         setTabLayout()
+
     }
 
     private fun setTabLayout() {
@@ -63,44 +61,31 @@ class QuranFragment : Fragment() {
         })
     }
 
-    private fun loadJuz() {
-        quranAdapter.setItem(itemList)
+    private fun loadJuz() {var parahList1 =
+        CommonUitlities.getObjectFromResponse( "", SurahList::class.java, "juz_list.json") as SurahList
+        parahList1.juz.forEach {
+            it.viewType = 1
+        }
+        quranAdapter.setItem(parahList1.juz)
     }
 
     private fun loadSurah() {
-        val parahNames = resources.getStringArray(R.array.parah_list)
-
-        var count = 1
-        parahNames.forEach {
-            parahList.add(Surah(count++, it, "سُوْرَۃُ الفَاتِحَة", "", "The Cow"))
+        var parahList1 =
+            CommonUitlities.getObjectFromResponse( "", SurahList::class.java, "surah_list.json") as SurahList
+        parahList1.surah.forEach {
+            it.viewType = 0
         }
-
-        quranAdapter.setItem(parahList)
+        quranAdapter.setItem(parahList1.surah)
     }
 
     private fun setRecyclerview() {
-        val layoutManager = LinearLayoutManager(context)
-
-        // fetching data from string resource
-        val surahNames = resources.getStringArray(R.array.surah_names)
-
-        // set array into a list
-        surahList.addAll(surahNames)
-        var countt = 1
-
-        surahList.forEach {
-            itemList.add(Surah(countt++, it, "سُوْرَۃُ الفَاتِحَة", "", "The Cow"))
-
-        }
-
-        // Recycler view initialize
-        binding.recyclerView.layoutManager = layoutManager
-        binding.recyclerView.setHasFixedSize(true)
-
-        //initializing adapter and adding data into adapter
         quranAdapter = QuranAdapter(requireContext())
-        binding.recyclerView.adapter = quranAdapter
-
-        quranAdapter.setItem(itemList)
+        // Recycler view initialize
+        binding.recyclerView.apply {
+            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+            adapter = quranAdapter
+            setHasFixedSize(true)
+        }
+        loadSurah()
     }
 }

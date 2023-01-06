@@ -102,4 +102,10 @@ abstract class RecyclerAdapter<DataType, Binding> : RecyclerView.Adapter<Recycle
     fun getItemAtPosition(position: Int): DataType {
         return item!!.get(position)
     }
+
+    enum class VIEW(val type: Int) {
+        SURAH(0),
+        JUZ(0)
+
+    }
 }

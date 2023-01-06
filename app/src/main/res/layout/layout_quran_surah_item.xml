@@ -41,10 +41,20 @@
                 android:layout_marginStart="@dimen/margin_16"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/txt_surah_number"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txt_surah_number"
                 tools:text="Al Fatihah" />
+
+            <TextView
+                android:id="@+id/txt_surah_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_surah_number"
+                app:layout_constraintStart_toEndOf="@+id/txt_surah_number"
+                tools:text="The Opener" />
 
 
             <TextView
@@ -54,10 +64,21 @@
                 android:layout_marginEnd="@dimen/margin_16"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_surah_name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Al Fatihah" />
+
+            <TextView
+                android:id="@+id/txt_surah_total_verses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt_surah_desc"
+                app:layout_constraintEnd_toEndOf="@+id/txt_surah_name_arabic"
+                app:layout_constraintTop_toTopOf="@+id/txt_surah_desc"
+                tools:text="114" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
