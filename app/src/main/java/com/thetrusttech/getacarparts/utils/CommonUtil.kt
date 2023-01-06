@@ -6,8 +6,6 @@ import android.content.SharedPreferences
 import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.graphics.Color.BLACK
-import android.graphics.Color.WHITE
 import android.graphics.Matrix
 import android.media.ExifInterface
 import android.net.ConnectivityManager
@@ -25,7 +23,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -34,8 +31,8 @@ import com.google.zxing.MultiFormatWriter
 import com.google.zxing.WriterException
 import com.google.zxing.common.BitMatrix*/
 import com.thetrusttech.getacarparts.R
-import com.thetrusttech.getacarparts.base.CoroutineUseCase
-import com.thetrusttech.getacarparts.base.GlobalRuntimeVariableAccess
+import com.thetrusttech.getacarparts.utils.GlobalRuntimeVariableProvider
+import com.thetrusttech.getacarparts.utils.readAssetsFile
 import org.jetbrains.annotations.NotNull
 import org.json.JSONObject
 import java.io.File
@@ -180,10 +177,13 @@ class CommonUitlities {
 
     companion object {
         @JvmStatic
-        fun getObjectFromResponse(response: String, classObject: Class<out Any>): Any? {
+        fun getObjectFromResponse(response: String, classObject: Class<out Any>, jsonFileName: String = ""): Any? {
             //val jsonStringResponse = Gson().toJson(response)
+            var json = response
+            if (json.isEmpty())
+                json = GlobalRuntimeVariableProvider.getContext().assets.readAssetsFile(jsonFileName)
             val responseObject =
-                Gson().fromJson(response, classObject)
+                Gson().fromJson(json, classObject)
             return responseObject
         }
 
@@ -269,7 +269,7 @@ class CommonUitlities {
                 inputStream.close()
 
                 // The new size we want to scale to
-                var MAX_SIZE = GlobalRuntimeVariableAccess.context!!.getResources().getInteger(R.integer.max_edge_size)
+                var MAX_SIZE = GlobalRuntimeVariableProvider.getContext().resources.getInteger(R.integer.max_edge_size)
 
                 // Find the correct scale value. It should be the power of 2.
                 var scale:Double = 1.0
@@ -301,7 +301,7 @@ class CommonUitlities {
 
                 selectedBitmap!!.compress(
                     Bitmap.CompressFormat.JPEG,
-                    GlobalRuntimeVariableAccess.context!!.getResources().getInteger(R.integer.image_quality_percent), outputStream)
+                    GlobalRuntimeVariableProvider.getContext().resources.getInteger(R.integer.image_quality_percent), outputStream)
             } catch (e: Exception) {
                 Log.d("CommonUtilities", "Image compression failed")
             }
