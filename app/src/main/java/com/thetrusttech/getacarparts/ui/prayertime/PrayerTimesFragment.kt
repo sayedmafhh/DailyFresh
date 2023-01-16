@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.databinding.ListItemBinding
 import com.thetrusttech.getacarparts.base.RecyclerAdapter
+import org.json.XML
+import org.json.JSONObject
 
 
 class PrayerTimesFragment : Fragment() {
-
-    //private lateinit var prayerAdapter: PrayerAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,33 +26,28 @@ class PrayerTimesFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        /*prayerAdapter = PrayerAdapter()
-
-        var rv = view.findViewById<RecyclerView>(R.id.rv_prayer_time)
-        rv.apply {
-            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-            adapter = prayerAdapter
-        }
-
-        val arr = resources.getStringArray(R.array.surah_names).toList()
-        prayerAdapter.setItem(arr)*/
+        anb()
 
     }
 
-    /*class PrayerAdapter : RecyclerAdapter<String, ListItemBinding>() {
-        override fun getLayoutResId(): Int {
-            return R.layout.list_item
-        }
+    fun anb() {
+        val PRETTY_PRINT_INDENT_FACTOR = 2
 
-        override fun onBindData(listItem: String, dataBinding: ListItemBinding, position: Int) {
-            //dataBinding.surah.text = listItem
-        }
+        val xmlStr = """
+  	<Author>
+	   <address>
+	      <street>Internet Broadline</street>
+	      <postcode>123456</postcode>
+	   </address>
+	   <name>bezkoder</name>
+	   <age>26</age>
+	</Author>
+  """
 
-        override fun onItemClick(listItem: String, position: Int) {
-        }
+        val jsonObj = XML.toJSONObject(xmlStr)
+        val jsonPrettyPrintString = jsonObj.toString(PRETTY_PRINT_INDENT_FACTOR)
 
-        override fun setCurrentPage(pageName: String) {
-        }
+        println(jsonPrettyPrintString)
+    }
 
-    }*/
 }

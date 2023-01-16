@@ -33,4 +33,7 @@ class GCPRepository {
     fun getCarModel(): LiveData<ApiResponse<ArrayList<CarModel>>> {
         return DFServiceProvider.instance.getCarModel()
     }
+
+    fun getQuran() = DFServiceProvider.instance.getQuran()
+
 }

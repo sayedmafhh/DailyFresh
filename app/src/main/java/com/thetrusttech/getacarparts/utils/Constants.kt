@@ -6,7 +6,7 @@ package com.thetrusttech.getacarparts.utils
  */
 class Constants {
     companion object {
-        const val BASE_URL = "https://creativesyed.com/public/"
+        const val BASE_URL = "https://api.quran.com/"
         const val EXTRA_TITLE = "extra_recipe_title"
         const val DELAY_DURATION: Long = 500
 

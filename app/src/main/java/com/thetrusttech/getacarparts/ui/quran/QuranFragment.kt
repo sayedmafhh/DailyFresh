@@ -6,19 +6,31 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.asgl.sdk.common.CommonUitlities
 import com.google.android.material.tabs.TabLayout
+import com.thetrusttech.getacarparts.R
+import com.thetrusttech.getacarparts.base.BaseFragment
 import com.thetrusttech.getacarparts.databinding.FragmentQuranBinding
+import com.thetrusttech.getacarparts.models.response_maker.ApiErrorResponse
+import com.thetrusttech.getacarparts.models.response_maker.ApiSuccessResponse
 import com.thetrusttech.getacarparts.ui.QuranAdapter
 import com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment.Companion.TAG
+import com.thetrusttech.getacarparts.ui.home.ui.home.HomeViewModel
 
 
-class QuranFragment : Fragment() {
+class QuranFragment : BaseFragment(), QuranAdapter.IItemClickListener {
 
     private lateinit var quranAdapter: QuranAdapter
 
     private lateinit var binding: FragmentQuranBinding
+
+    private val quranViewModel: QuranViewModel by viewModels { getViewModelFactory!! }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,7 +45,6 @@ class QuranFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         setRecyclerview()
         setTabLayout()
-
     }
 
     private fun setTabLayout() {
@@ -79,7 +90,7 @@ class QuranFragment : Fragment() {
     }
 
     private fun setRecyclerview() {
-        quranAdapter = QuranAdapter(requireContext())
+        quranAdapter = QuranAdapter(requireContext(), this)
         // Recycler view initialize
         binding.recyclerView.apply {
             layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
@@ -87,5 +98,16 @@ class QuranFragment : Fragment() {
             setHasFixedSize(true)
         }
         loadSurah()
+    }
+
+    private fun navigateToReadQuran() {
+        R.navigation.mobile_navigation
+        val nav = QuranFragmentDirections.actionNavigationQuranFragmentToReadQuranFragment()
+        //findNavController().navigate(nav)
+        NavHostFragment.findNavController(this).navigate(nav)
+    }
+
+    override fun itemClickListener() {
+        navigateToReadQuran()
     }
 }

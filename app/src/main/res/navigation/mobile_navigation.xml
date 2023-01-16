@@ -3,20 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/quranFragment">
 <!--
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home_car" />
+        android:id="@+id/readQuranFragment"
+        android:name="com.thetrusttech.getacarparts.ui.read_quran.ReadQuranFragment"
+        android:label="Read Quran"
+        tools:layout="@layout/fragment_read_quran" />-->
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.thetrusttech.getacarparts.ui.home.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+    <!--<fragment
+        android:id="@+id/quranFragment"
+        android:name="com.thetrusttech.getacarparts.ui.quran.QuranFragment"
+        android:label="Quran Fragment"
+        tools:layout="@layout/fragment_quran" >
 
+        <action
+            android:id="@+id/action_navigation_quran_fragment_to_read_quran_fragment"
+            app:destination="@id/readQuranFragment"/>
+    </fragment>-->
+<!--
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.thetrusttech.getacarparts.ui.home.ui.notifications.NotificationsFragment"

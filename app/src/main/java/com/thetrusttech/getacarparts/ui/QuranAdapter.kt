@@ -7,7 +7,7 @@ import com.thetrusttech.getacarparts.databinding.ListItemBinding
 import com.thetrusttech.getacarparts.base.RecyclerAdapter
 import com.thetrusttech.getacarparts.ui.quran.SurahList.ListItem
 
-class QuranAdapter(val context: Context) : RecyclerAdapter<ListItem, ListItemBinding>() {
+class QuranAdapter(val context: Context, val clickListener: IItemClickListener) : RecyclerAdapter<ListItem, ListItemBinding>() {
 
     override fun getLayoutResId(): Int {
         return R.layout.list_item
@@ -41,11 +41,15 @@ class QuranAdapter(val context: Context) : RecyclerAdapter<ListItem, ListItemBin
     }
 
     override fun onItemClick(listItem: ListItem, position: Int) {
-
+        clickListener.itemClickListener()
     }
 
     override fun setCurrentPage(pageName: String) {
 
+    }
+
+    interface IItemClickListener {
+        fun itemClickListener()
     }
 
 }

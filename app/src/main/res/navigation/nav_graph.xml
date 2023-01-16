@@ -29,10 +29,20 @@
         android:id="@+id/quranFragment"
         android:name="com.thetrusttech.getacarparts.ui.quran.QuranFragment"
         android:label="fragment_quran"
-        tools:layout="@layout/fragment_quran" />
+        tools:layout="@layout/fragment_quran" >
+        <action
+            android:id="@+id/action_navigation_quran_fragment_to_read_quran_fragment"
+            app:destination="@id/readQuranFragment"/>
+    </fragment>
     <fragment
         android:id="@+id/zikrFragment"
         android:name="com.thetrusttech.getacarparts.ui.zikr.ZikrFragment"
         android:label="fragment_zikr"
         tools:layout="@layout/fragment_zikr" />
+
+    <fragment
+        android:id="@+id/readQuranFragment"
+        android:name="com.thetrusttech.getacarparts.ui.read_quran.ReadQuranFragment"
+        android:label="Read Quran"
+        tools:layout="@layout/fragment_read_quran" />
 </navigation>
