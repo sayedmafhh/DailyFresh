@@ -35,4 +35,7 @@ interface TTTIAPI {
 
     @GET("api/v4/quran/verses/indopak")
     fun getQuran(): LiveData<ApiResponse<Quran>>
+
+    @GET("api/v4/quran/verses/indopak")
+    fun getZikr(): LiveData<ApiResponse<Quran>>
 }
