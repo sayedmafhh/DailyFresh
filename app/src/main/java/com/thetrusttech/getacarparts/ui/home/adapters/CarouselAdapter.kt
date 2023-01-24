@@ -16,7 +16,7 @@ class CarouselAdapter(private val context: Context, private val itemList: List<S
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         layoutInflater = LayoutInflater.from(context)
-        var view = layoutInflater.inflate(R.layout.layout_image_slider,container,false)
+        var view = layoutInflater.inflate(R.layout.layout_image_slider_quran,container,false)
         val img = view.findViewById<ImageView>(R.id.my_featured_image)
 
         Glide.with(context)
