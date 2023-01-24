@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.viewpager.widget.PagerAdapter
 import com.bumptech.glide.Glide
-import com.jsibbold.zoomage.ZoomageView
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.base.BaseFragment
 import com.thetrusttech.getacarparts.databinding.FragmentReadQuranBinding
