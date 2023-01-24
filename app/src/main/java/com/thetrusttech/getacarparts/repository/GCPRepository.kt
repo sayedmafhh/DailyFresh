@@ -35,5 +35,6 @@ class GCPRepository {
     }
 
     fun getQuran() = DFServiceProvider.instance.getQuran()
+    fun getZikr() = DFServiceProvider.instance.getZikr()
 
 }
