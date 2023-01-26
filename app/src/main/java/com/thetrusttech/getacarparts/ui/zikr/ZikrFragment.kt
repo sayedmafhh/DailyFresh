@@ -5,68 +5,37 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.asgl.sdk.common.CommonUitlities
 import com.google.android.material.tabs.TabLayout
 import com.thetrusttech.getacarparts.base.BaseFragment
 import com.thetrusttech.getacarparts.databinding.FragmentQuranBinding
+import com.thetrusttech.getacarparts.databinding.FragmentZikrBinding
 import com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment.Companion.TAG
 import com.thetrusttech.getacarparts.ui.quran.SurahList
 
 
-class ZikrFragment : BaseFragment() {
+class ZikrFragment : BaseFragment(), ZikrAdapter.IZikrItemClickListener {
 
     private lateinit var zikrAdapter: ZikrAdapter
 
-    private lateinit var binding: FragmentQuranBinding
+    private lateinit var binding: FragmentZikrBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentQuranBinding.inflate(inflater, container, false)
+        binding = FragmentZikrBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setRecyclerview()
-        setTabLayout()
-    }
-
-    private fun setTabLayout() {
-        binding.tabLayout.addTab(
-            binding.tabLayout.newTab().setText("Surah")
-        )
-        binding.tabLayout.addTab(
-            binding.tabLayout.newTab().setText("Juz")
-        )
-
-        binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
-            override fun onTabSelected(tab: TabLayout.Tab?) {
-                Log.d(TAG, "onTabSelected: " + tab!!.id.toString())
-                when(tab.position) {
-                    0 -> loadSurah()
-                    1 -> loadJuz()
-                }
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab?) {
-            }
-
-            override fun onTabReselected(tab: TabLayout.Tab?) {
-            }
-        })
-    }
-
-    private fun loadJuz() {var parahList1 =
-        CommonUitlities.getObjectFromResponse( "", SurahList::class.java, "juz_list.json") as SurahList
-        parahList1.juz.forEach {
-            it.viewType = 1
-        }
-        zikrAdapter.setItem(parahList1.juz)
     }
 
     private fun loadSurah() {
@@ -79,14 +48,18 @@ class ZikrFragment : BaseFragment() {
     }
 
     private fun setRecyclerview() {
-        zikrAdapter = ZikrAdapter(requireContext())
+        zikrAdapter = ZikrAdapter(requireContext(), this)
         // Recycler view initialize
         binding.recyclerView.apply {
-            layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+            layoutManager = GridLayoutManager(requireContext(),2, GridLayoutManager.VERTICAL,false)
             adapter = zikrAdapter
             setHasFixedSize(true)
         }
         loadSurah()
+    }
+
+    override fun onZikrItemClickListener(page_position: Int) {
+        Toast.makeText(requireContext(), "Item Clicked on Position : $page_position", Toast.LENGTH_SHORT).show()
     }
 
 }

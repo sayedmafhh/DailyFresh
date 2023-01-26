@@ -1,58 +1,38 @@
 package com.thetrusttech.getacarparts.ui.zikr
 
 import android.content.Context
-import android.util.Log
-import android.view.View
+import androidx.core.content.res.ResourcesCompat
+import com.bumptech.glide.Glide
 import com.thetrusttech.getacarparts.R
-import com.thetrusttech.getacarparts.databinding.ListItemBinding
 import com.thetrusttech.getacarparts.base.RecyclerAdapter
-import com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment.Companion.TAG
+import com.thetrusttech.getacarparts.databinding.LayoutZikrListItemBinding
 import com.thetrusttech.getacarparts.ui.quran.SurahList.ListItem
 
-class ZikrAdapter(val context: Context) : RecyclerAdapter<ListItem, ListItemBinding>() {
+class ZikrAdapter(val context: Context, val listener: IZikrItemClickListener) : RecyclerAdapter<ListItem, LayoutZikrListItemBinding>() {
 
-    override fun getLayoutResId(): Int {
-        return R.layout.list_item
-    }
+    override fun getLayoutResId() = R.layout.layout_zikr_list_item
 
-    override fun getItemViewType(position: Int): Int {
-        return super.getItemViewType(position)
-    }
+    override fun onBindData(
+        listItem: ListItem,
+        dataBinding: LayoutZikrListItemBinding,
+        position: Int
+    ) {
+        dataBinding.txtSurahName.text = listItem.name
 
-    override fun onBindData(listItem: ListItem, dataBinding: ListItemBinding, position: Int) {
-        if (listItem.viewType == 0) {
-            dataBinding.viewCard.root.visibility = View.VISIBLE
-            dataBinding.viewCardJuz.root.visibility = View.GONE
-
-            dataBinding.viewCard.txtSurahDesc.text = listItem.description
-            dataBinding.viewCard.txtSurahTotalVerses.text = listItem.total_verses
-            dataBinding.viewCard.txtSurahName.text = listItem.name
-            dataBinding.viewCard.txtSurahNameArabic.text = listItem.name_ar
-            dataBinding.viewCard.txtSurahNumber.text = listItem.id.toString()
-        } else if (listItem.viewType == 1){
-            dataBinding.viewCardJuz.root.visibility = View.VISIBLE
-            dataBinding.viewCard.root.visibility = View.GONE
-
-            dataBinding.viewCardJuz.txtSurahName.text = listItem.name
-            dataBinding.viewCardJuz.txtSurahNameArabic.text = listItem.name_ar
-            dataBinding.viewCardJuz.txtSurahNumber.text = listItem.id.toString()
-
-        }
-
-
+        Glide.with(context)
+            .load("https://m.media-amazon.com/images/I/919B5KYZfwL.jpg")
+            .centerCrop()
+            .into(dataBinding.ivZikr)
     }
 
     override fun onItemClick(listItem: ListItem, position: Int) {
-        Log.d(TAG, "onItemClick: $position")
-    //clickListener.itemClickListener()
+        listener.onZikrItemClickListener(listItem.page_number)
     }
 
-    override fun setCurrentPage(pageName: String) {
+    override fun setCurrentPage(pageName: String) {}
 
+    interface IZikrItemClickListener {
+        fun onZikrItemClickListener(page_position: Int)
     }
-
-    /*interface IItemClickListener {
-        fun itemClickListener()
-    }*/
 
 }

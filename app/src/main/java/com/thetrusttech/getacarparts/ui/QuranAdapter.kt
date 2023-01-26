@@ -3,21 +3,21 @@ package com.thetrusttech.getacarparts.ui
 import android.content.Context
 import android.view.View
 import com.thetrusttech.getacarparts.R
-import com.thetrusttech.getacarparts.databinding.ListItemBinding
 import com.thetrusttech.getacarparts.base.RecyclerAdapter
+import com.thetrusttech.getacarparts.databinding.LayoutListItemBinding
 import com.thetrusttech.getacarparts.ui.quran.SurahList.ListItem
 
-class QuranAdapter(val context: Context, val clickListener: IItemClickListener) : RecyclerAdapter<ListItem, ListItemBinding>() {
+class QuranAdapter(val context: Context, val clickListener: IItemClickListener) : RecyclerAdapter<ListItem, LayoutListItemBinding>() {
 
     override fun getLayoutResId(): Int {
-        return R.layout.list_item
+        return R.layout.layout_list_item
     }
 
     override fun getItemViewType(position: Int): Int {
         return super.getItemViewType(position)
     }
 
-    override fun onBindData(listItem: ListItem, dataBinding: ListItemBinding, position: Int) {
+    override fun onBindData(listItem: ListItem, dataBinding: LayoutListItemBinding, position: Int) {
         if (listItem.viewType == 0) {
             dataBinding.viewCard.root.visibility = View.VISIBLE
             dataBinding.viewCardJuz.root.visibility = View.GONE
