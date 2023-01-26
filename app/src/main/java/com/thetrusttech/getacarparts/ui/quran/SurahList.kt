@@ -10,6 +10,7 @@ data class SurahList(
         var name_ar: String,
         val description: String,
         val total_verses: String,
+        var page_number: Int,
         var viewType: Int
     )
 }

@@ -41,7 +41,7 @@ class QuranAdapter(val context: Context, val clickListener: IItemClickListener) 
     }
 
     override fun onItemClick(listItem: ListItem, position: Int) {
-        clickListener.itemClickListener()
+        clickListener.itemClickListener(listItem.page_number)
     }
 
     override fun setCurrentPage(pageName: String) {
@@ -49,7 +49,7 @@ class QuranAdapter(val context: Context, val clickListener: IItemClickListener) 
     }
 
     interface IItemClickListener {
-        fun itemClickListener()
+        fun itemClickListener(page_position: Int)
     }
 
 }

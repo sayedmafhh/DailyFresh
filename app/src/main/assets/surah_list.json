@@ -4,25 +4,29 @@
     "name" : "Al-Fatiha",
     "name_ar" : "الفَاتِحَة",
     "description" : "The Opening",
-    "total_verses" : 7
+    "total_verses" : 7,
+    "page_number" : 0
   },{
     "id": 2,
     "name" : "Al-Baqarah",
     "name_ar" : "البَقَرَة",
     "description" : "The Cow",
-    "total_verses" : 286
+    "total_verses" : 286,
+    "page_number" : 1
   },{
     "id": 3,
     "name" : "Al-Imran",
     "name_ar" : "آل عِمرَان",
     "description" : "The Family Of Imran",
-    "total_verses" : 200
+    "total_verses" : 200,
+    "page_number" : 49
   }, {
     "id": 4,
     "name" : "An-Nisa",
     "name_ar" : "النِّسَاء",
     "description" : "The Women",
     "total_verses" : 176,
+    "page_number" : 76,
     "url" : "https://gpsarab.com/shop11/en/content/11-list-of-surahs-in-the-holy-quran#:~:text=List%20of%20surahs%20in%20the%20Holy%20Qur%27an%20,%20%20Women%20%2037%20more%20rows%20",
     "url1" : "https://quran.com/"
   },{

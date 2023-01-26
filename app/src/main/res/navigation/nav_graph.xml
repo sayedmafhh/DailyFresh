@@ -44,5 +44,10 @@
         android:id="@+id/readQuranFragment"
         android:name="com.thetrusttech.getacarparts.ui.read_quran.ReadQuranFragment"
         android:label="Read Quran"
-        tools:layout="@layout/fragment_read_quran" />
+        tools:layout="@layout/fragment_read_quran" >
+        <argument
+            android:defaultValue="0"
+            app:argType="integer"
+            android:name="page_position"/>
+    </fragment>
 </navigation>

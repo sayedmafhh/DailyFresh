@@ -2,26 +2,19 @@ package com.thetrusttech.getacarparts.ui.quran
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.asgl.sdk.common.CommonUitlities
 import com.google.android.material.tabs.TabLayout
 import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.base.BaseFragment
 import com.thetrusttech.getacarparts.databinding.FragmentQuranBinding
-import com.thetrusttech.getacarparts.models.response_maker.ApiErrorResponse
-import com.thetrusttech.getacarparts.models.response_maker.ApiSuccessResponse
 import com.thetrusttech.getacarparts.ui.QuranAdapter
 import com.thetrusttech.getacarparts.ui.home.ui.home.HomeFragment.Companion.TAG
-import com.thetrusttech.getacarparts.ui.home.ui.home.HomeViewModel
 
 
 class QuranFragment : BaseFragment(), QuranAdapter.IItemClickListener {
@@ -100,14 +93,13 @@ class QuranFragment : BaseFragment(), QuranAdapter.IItemClickListener {
         loadSurah()
     }
 
-    private fun navigateToReadQuran() {
+    private fun navigateToReadQuran(page_position: Int) {
         R.navigation.mobile_navigation
-        val nav = QuranFragmentDirections.actionNavigationQuranFragmentToReadQuranFragment()
-        //findNavController().navigate(nav)
+        val nav = QuranFragmentDirections.actionNavigationQuranFragmentToReadQuranFragment(page_position)
         NavHostFragment.findNavController(this).navigate(nav)
     }
 
-    override fun itemClickListener() {
-        navigateToReadQuran()
+    override fun itemClickListener(page_position: Int) {
+        navigateToReadQuran(page_position)
     }
 }
