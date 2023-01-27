@@ -40,654 +40,762 @@
     "name" : "Al-An'am",
     "name_ar" : "الأنعَام",
     "description" : "The Cattle",
-    "total_verses" : 165
+    "total_verses" : 165,
+    "page_number" : 105
   },{
     "id": 7,
     "name" : "Al-A'raf",
     "name_ar" : "الأعرَاف",
     "description" : "The Elevated Places",
-    "total_verses" : 206
+    "total_verses" : 206,
+    "page_number" : 127
   },{
     "id": 8,
     "name" : "Al-Anfal",
     "name_ar" : "الأنفَال",
     "description" : "The Spoils Of War",
-    "total_verses" : 75
+    "total_verses" : 75,
+    "page_number" : 150
   },{
     "id": 9,
     "name" : "At-Taubah",
     "name_ar" : "التوبَة",
     "description" : "The Repentance",
-    "total_verses" : 129
+    "total_verses" : 129,
+    "page_number" : 186
   },{
     "id": 10,
     "name" : "Yunus",
     "name_ar" : "يُونس",
     "description" : "Johan",
-    "total_verses" : 109
+    "total_verses" : 109,
+    "page_number" : 207
   },{
     "id": 11,
     "name" : "Hud",
     "name_ar" : "هُود",
     "description" : "Hud",
-    "total_verses" : 123
+    "total_verses" : 123,
+    "page_number" : 220
   },{
     "id": 12,
     "name" : "Yusuf",
     "name_ar" : "يُوسُف",
     "description" : "Joseph",
-    "total_verses" : 111
+    "total_verses" : 111,
+    "page_number" : 234
   },{
     "id": 13,
     "name" : "Ar-Ra’d",
     "name_ar" : "الرَّعْد",
     "description" : "The Thunder",
-    "total_verses" : 43
+    "total_verses" : 43,
+    "page_number" : 248
   },{
     "id": 14,
     "name" : "Ibrahim",
     "name_ar" : "إبراهِيم",
     "description" : "Abraham",
-    "total_verses" : 52
+    "total_verses" : 52,
+    "page_number" : 254
   },{
     "id": 15,
     "name" : "Al-Hijr",
     "name_ar" : "الحِجْر",
     "description" : "The Rocky Tract",
-    "total_verses" : 99
+    "total_verses" : 99,
+    "page_number" : 261
   },{
     "id": 16,
     "name" : "An-Nahl",
     "name_ar" : "النَّحْل",
     "description" : "The Bee",
-    "total_verses" : 128
+    "total_verses" : 128,
+    "page_number" : 266
   },{
     "id": 17,
     "name" : "Al-Isra",
     "name_ar" : "الإسْرَاء",
     "description" : "The Night Journey",
-    "total_verses" : 111
+    "total_verses" : 111,
+    "page_number" : 281
   },{
     "id": 18,
     "name" : "Al-Kahf",
     "name_ar" : "الكهْف",
     "description" : "The Cave",
-    "total_verses" : 110
+    "total_verses" : 110,
+    "page_number" : 292
   },{
     "id": 19,
     "name" : "Maryam",
     "name_ar" : "مَريَم",
     "description" : "Mary",
-    "total_verses" : 98
+    "total_verses" : 98,
+    "page_number" : 304
   },{
     "id": 20,
     "name" : "Ta-Ha",
     "name_ar" : "طه",
     "description" : "Ta-Ha",
-    "total_verses" : 135
+    "total_verses" : 135,
+    "page_number" : 311
   },{
     "id": 21,
     "name" : "Al-Anbiya",
     "name_ar" : "الأنبيَاء",
     "description" : "The Prophets",
-    "total_verses" : 112
+    "total_verses" : 112,
+    "page_number" : 321
   },{
     "id": 22,
     "name" : "Al-Haj",
     "name_ar" : "الحَج",
     "description" : "The Pilgrimage",
-    "total_verses" : 78
+    "total_verses" : 78,
+    "page_number" : 331
   },{
     "id": 23,
     "name" : "Al-Mu’minun",
     "name_ar" : "المُؤمنون",
     "description" : "The Believers",
-    "total_verses" : 118
+    "total_verses" : 118,
+    "page_number" : 341
   },{
     "id": 24,
     "name" : "An-Nur",
     "name_ar" : "النُّور",
     "description" : "The Light",
-    "total_verses" : 64
+    "total_verses" : 64,
+    "page_number" : 349
   },{
     "id": 25,
     "name" : "Al-Furqan",
     "name_ar" : "الفُرْقان",
     "description" : "The Criterion",
-    "total_verses" : 77
+    "total_verses" : 77,
+    "page_number" : 358
   },{
     "id": 26,
     "name" : "Ash-Shu’ara",
     "name_ar" : "الشُّعَرَاء",
     "description" : "The Poets",
-    "total_verses" : 227
+    "total_verses" : 227,
+    "page_number" : 366
   },{
     "id": 27,
     "name" : "An-Naml",
     "name_ar" : "النَّمْل",
     "description" : "The Ant",
-    "total_verses" : 93
+    "total_verses" : 93,
+    "page_number" : 376
   },{
     "id": 28,
     "name" : "Al-Qasas",
     "name_ar" : "القَصَص",
     "description" : "The Stories",
-    "total_verses" : 60
+    "total_verses" : 60,
+    "page_number" : 384
   },{
     "id": 29,
     "name" : "Al-Ankabut",
     "name_ar" : "العَنكبوت",
     "description" : "The Spider",
-    "total_verses" : 69
+    "total_verses" : 69,
+    "page_number" : 395
   },{
     "id": 30,
     "name" : "Ar-Rum",
     "name_ar" : "الرُّوم",
     "description" : "The Romans",
-    "total_verses" : 60
+    "total_verses" : 60,
+    "page_number" : 403
   },{
     "id": 31,
     "name" : "Luqman",
     "name_ar" : "لقمَان",
     "description" : "Luqman",
-    "total_verses" : 34
+    "total_verses" : 34,
+    "page_number" : 410
   },{
     "id": 32,
     "name" : "As-Sajdah",
     "name_ar" : "السَّجدَة",
     "description" : "The Prostration",
-    "total_verses" : 30
+    "total_verses" : 30,
+    "page_number" : 414
   },{
     "id": 33,
     "name" : "Al-Ahzab",
     "name_ar" : "الأحزَاب",
     "description" : "The Combined Forces",
-    "total_verses" : 73
+    "total_verses" : 73,
+    "page_number" : 417
   },{
     "id": 34,
     "name" : "Saba",
     "name_ar" : "سَبَأ",
     "description" : "Sheba",
-    "total_verses" : 54
+    "total_verses" : 54,
+    "page_number" : 227
   },{
     "id": 35,
     "name" : "Al-Fatir",
     "name_ar" : "فَاطِر",
     "description" : "Originator",
-    "total_verses" : 73
+    "total_verses" : 73,
+    "page_number" : 233
   },{
     "id": 36,
     "name" : "Ya-Sin",
     "name_ar" : "يس",
     "description" : "Ya Sin",
-    "total_verses" : 83
+    "total_verses" : 83,
+    "page_number" : 439
   },{
     "id": 37,
     "name" : "As-Saffah",
     "name_ar" : "الصَّافات",
     "description" : "Those Who Set The Ranks",
-    "total_verses" : 182
+    "total_verses" : 182,
+    "page_number" : 445
   },{
     "id": 38,
     "name" : "Sad",
     "name_ar" : "ص",
     "description" : "The Letter Saad",
-    "total_verses" : 88
+    "total_verses" : 88,
+    "page_number" : 452
   },{
     "id": 39,
     "name" : "Az-Zumar",
     "name_ar" : "الزُّمَر",
     "description" : "The Troops",
-    "total_verses" : 75
+    "total_verses" : 75,
+    "page_number" : 457
   },{
     "id": 40,
     "name" : "Ghafir",
     "name_ar" : "غَافِر",
     "description" : "The Forgiver",
-    "total_verses" : 85
+    "total_verses" : 85,
+    "page_number" : 466
   },{
     "id": 41,
     "name" : "Fusilat",
     "name_ar" : "فُصِّلَتْ",
     "description" : "Explained In Detail",
-    "total_verses" : 54
+    "total_verses" : 54,
+    "page_number" : 476
   },{
     "id": 42,
     "name" : "Ash-Shura",
     "name_ar" : "الشُّورَى",
     "description" : "The Consultation",
-    "total_verses" : 53
+    "total_verses" : 53,
+    "page_number" : 482
   },{
     "id": 43,
     "name" : "Az-Zukhruf",
     "name_ar" : "الزُّخْرُف",
     "description" : "The Embellishment",
-    "total_verses" : 89
+    "total_verses" : 89,
+    "page_number" : 488
   },{
     "id": 44,
     "name" : "Ad-Dukhan",
     "name_ar" : "الدُّخان",
     "description" : "The Evident Smoke",
-    "total_verses" : 59
+    "total_verses" : 59,
+    "page_number" : 495
   },{
     "id": 45,
     "name" : "Al-Jathiyah",
     "name_ar" : "الجاثِية",
     "description" : "The Kneeling",
-    "total_verses" : 37
+    "total_verses" : 37,
+    "page_number" : 498
   },{
     "id": 46,
     "name" : "Al-Ahqaf",
     "name_ar" : "الأحقاف",
     "description" : "The Sandhills",
-    "total_verses" : 35
+    "total_verses" : 35,
+    "page_number" : 501
   },{
     "id": 47,
     "name" : "Muhammad",
     "name_ar" : "مُحَمّد",
     "description" : "Muhammad",
-    "total_verses" : 38
+    "total_verses" : 38,
+    "page_number" : 506
   },{
     "id": 48,
     "name" : "Al-Fat’h",
     "name_ar" : "الفَتْح",
     "description" : "The Victory",
-    "total_verses" : 29
+    "total_verses" : 29,
+    "page_number" : 510
   },{
     "id": 49,
     "name" : "Al-Hujurat",
     "name_ar" : "الحُجُرات",
     "description" : "The Chambers",
-    "total_verses" : 18
+    "total_verses" : 18,
+    "page_number" : 514
   },{
     "id": 50,
     "name" : "Qaf",
     "name_ar" : "ق",
     "description" : "Qaf",
-    "total_verses" : 45
+    "total_verses" : 45,
+    "page_number" : 517
   },{
     "id": 51,
     "name" : "Adz-Dzariyah",
     "name_ar" : "الذَّاريَات",
     "description" : "The Scatterers",
-    "total_verses" : 60
+    "total_verses" : 60,
+    "page_number" : 519
   },{
     "id": 52,
     "name" : "At-Tur",
     "name_ar" : "الطُّور",
     "description" : "The Mountain",
-    "total_verses" : 49
+    "total_verses" : 49,
+    "page_number" : 522
   },{
     "id": 53,
     "name" : "An-Najm",
     "name_ar" : "النَّجْم",
     "description" : "The Star",
-    "total_verses" : 62
+    "total_verses" : 62,
+    "page_number" : 525
   },{
     "id": 54,
     "name" : "Al-Qamar",
     "name_ar" : "القَمَر",
     "description" : "The Moon",
-    "total_verses" : 55
+    "total_verses" : 55,
+    "page_number" : 527
   },{
     "id": 55,
     "name" : "Ar-Rahman",
     "name_ar" : "الرَّحمن",
     "description" : "The Merciful",
-    "total_verses" : 78
+    "total_verses" : 78,
+    "page_number" : 530
   },{
     "id": 56,
     "name" : "Al-Waqi’ah",
     "name_ar" : "الواقِعَة",
     "description" : "That Which is Coming",
-    "total_verses" : 96
+    "total_verses" : 96,
+    "page_number" : 533
   },{
     "id": 57,
     "name" : "Al-Hadid",
     "name_ar" : "الحَديد",
     "description" : "The Iron",
-    "total_verses" : 29
+    "total_verses" : 29,
+    "page_number" : 536
   },{
     "id": 58,
     "name" : "Al-Mujadilah",
     "name_ar" : "المُجادَلة",
     "description" : "She Who Pleaded",
-    "total_verses" : 22
+    "total_verses" : 22,
+    "page_number" : 541
   },{
     "id": 59,
     "name" : "Al-Hashr",
     "name_ar" : "الحَشْر",
     "description" : "The Exile",
-    "total_verses" : 24
+    "total_verses" : 24,
+    "page_number" : 544
   },{
     "id": 60,
     "name" : "Al-Mumtahanah",
     "name_ar" : "المُمتَحَنة",
     "description" : "She Who is Tested",
-  "total_verses" : 13
+  "total_verses" : 13,
+    "page_number" : 548
   },{
     "id": 61,
     "name" : "As-Saf",
     "name_ar" : "الصَّف",
     "description" : "The Ranks",
-    "total_verses" : 14
+    "total_verses" : 14,
+    "page_number" : 550
   },{
     "id": 62,
     "name" : "Al-Jum’ah",
     "name_ar" : "الجُّمُعة",
     "description" : "The Day of Congregation",
-    "total_verses" : 11
+    "total_verses" : 11,
+    "page_number" : 552
   },{
     "id": 63,
     "name" : "Al-Munafiqun",
     "name_ar" : "المُنافِقُون",
     "description" : "The Hypocrites",
-    "total_verses" : 11
+    "total_verses" : 11,
+    "page_number" : 553
   },{
     "id": 64,
     "name" : "At-Taghabun",
     "name_ar" : "التَّغابُن",
     "description" : "The Cheating",
-    "total_verses" : 18
+    "total_verses" : 18,
+    "page_number" : 555
   },{
     "id": 65,
     "name" : "At-Talaq",
     "name_ar" : "الطَّلاق",
     "description" : "The Divorce",
-    "total_verses" : 12
+    "total_verses" : 12,
+    "page_number" : 557
   },{
     "id": 66,
     "name" : "At-Tahrim",
     "name_ar" : "التَّحْريم",
     "description" : "The Prohibition",
-    "total_verses" : 12
+    "total_verses" : 12,
+    "page_number" : 559
   },{
     "id": 67,
     "name" : "Al-Mulk",
     "name_ar" : "المُلْك",
     "description" : "The Kingdom",
-    "total_verses" : 14
+    "total_verses" : 14,
+    "page_number" : 561
   },{
     "id": 68,
     "name" : "Al-Qalam",
     "name_ar" : "القَلـََم",
     "description" : "The Pen",
-    "total_verses" : 14
+    "total_verses" : 14,
+    "page_number" : 563
   },{
     "id": 69,
     "name" : "Al-Haqqah",
     "name_ar" : "الحَاقّـَة",
     "description" : "The Inevitable",
-    "total_verses" : 14
+    "total_verses" : 14,
+    "page_number" : 565
   },{
     "id": 70,
     "name" : "Al-Ma’arij",
     "name_ar" : "المَعارِج",
     "description" : "The Ladders",
-    "total_verses" : 14
+    "total_verses" : 14,
+    "page_number" : 567
   },{
     "id": 71,
     "name" : "Nuh",
     "name_ar" : "نُوح",
     "description" : "Noah",
-    "total_verses" : 14
+    "total_verses" : 14,
+    "page_number" : 569
   },{
     "id": 72,
     "name" : "Al-Jinn",
     "name_ar" : "الجِنّ",
     "description" : "The Jinn",
-    "total_verses" : 14
+    "total_verses" : 14,
+    "page_number" : 571
   },{
     "id": 73,
     "name" : "Al-Muzammil",
     "name_ar" : "المُزَّمّـِل",
     "description" : "The Mantled One",
-    "total_verses" : 20
+    "total_verses" : 20,
+    "page_number" : 573
   },{
     "id": 74,
     "name" : "Al-Mudaththir",
     "name_ar" : "المُدَّثــِّر",
     "description" : "The Clothed One",
-    "total_verses" : 56
+    "total_verses" : 56,
+    "page_number" : 574
   },{
     "id": 75,
     "name" : "Al-Qiyamah",
     "name_ar" : "القِيامَة",
     "description" : "The Resurrection",
-    "total_verses" : 40
+    "total_verses" : 40,
+    "page_number" : 576
   },{
     "id": 76,
     "name" : "Al-Insan",
     "name_ar" : "الإنسان",
     "description" : "The Man",
-    "total_verses" : 31
+    "total_verses" : 31,
+    "page_number" : 577
   },{
     "id": 77,
     "name" : "Al-Mursalat",
     "name_ar" : "المُرسَلات",
     "description" : "The Emissaries",
-    "total_verses" : 50
+    "total_verses" : 50,
+    "page_number" : 579
   },{
     "id": 78,
     "name" : "An-Naba",
     "name_ar" : "النـَّبأ",
     "description" : "The Tidings",
-    "total_verses" : 40
+    "total_verses" : 40,
+    "page_number" : 581
   },{
     "id": 79,
     "name" : "An-Nazi’at",
     "name_ar" : "النـّازِعات",
     "description" : "Those Who Pull Out",
-    "total_verses" : 46
+    "total_verses" : 46,
+    "page_number" : 582
   },{
     "id": 80,
     "name" : "Abasa",
     "name_ar" : "عَبَس",
     "description" : "He Frowned",
-    "total_verses" : 42
+    "total_verses" : 42,
+    "page_number" : 584
   },{
     "id": 81,
     "name" : "At-Takwir",
     "name_ar" : "التـَّكْوير",
     "description" : "The Cessation",
-    "total_verses" : 29
+    "total_verses" : 29,
+    "page_number" : 585
   },{
     "id": 82,
     "name" : "Al-Infitar",
     "name_ar" : "الإنفِطار",
     "description" : "The Cleaving Asunder",
-    "total_verses" : 19
+    "total_verses" : 19,
+    "page_number" : 586
   },{
     "id": 83,
     "name" : "Al-Mutaffifin",
     "name_ar" : "المُطـَفِّفين",
     "description" : "The Defrauders",
-    "total_verses" : 36
+    "total_verses" : 36,
+    "page_number" : 586
   },{
     "id": 84,
     "name" : "Al-Inshiqaq",
     "name_ar" : "الإنشِقاق",
     "description" : "The Rending",
-    "total_verses" : 25
+    "total_verses" : 25,
+    "page_number" : 588
   },{
     "id": 85,
     "name" : "Al-Buruj",
     "name_ar" : "البُروج",
     "description" : "the Constellations",
-    "total_verses" : 22
+    "total_verses" : 22,
+    "page_number" : 589
   },{
     "id": 86,
     "name" : "At-Tariq",
     "name_ar" : "الطّارق",
     "description" : "The Night-Comer",
-    "total_verses" : 17
+    "total_verses" : 17,
+    "page_number" : 590
   },{
     "id": 87,
     "name" : "Al-A’la",
     "name_ar" : "الأعلی",
     "description" : "The Most High",
-    "total_verses" : 19
+    "total_verses" : 19,
+    "page_number" : 590
   },{
     "id": 88,
     "name" : "Al-Ghashiyah",
     "name_ar" : "الغاشِيَة",
     "description" : "The Overwhelming Calamity",
-    "total_verses" : 26
+    "total_verses" : 26,
+    "page_number" : 591
   },{
     "id": 89,
     "name" : "Al-Fajr",
     "name_ar" : "الفَجْر",
     "description" : "The Dawn",
-    "total_verses" : 30
+    "total_verses" : 30,
+    "page_number" : 592
   },{
     "id": 90,
     "name" : "Al-Balad",
     "name_ar" : "البَـلـَد",
     "description" : "The City",
-    "total_verses" : 20
+    "total_verses" : 20,
+    "page_number" : 593
   },{
     "id": 91,
     "name" : "Ash-Shams",
     "name_ar" : "الشــَّمْس",
     "description" : "The Sun",
-    "total_verses" : 15
+    "total_verses" : 15,
+    "page_number" : 594
   },{
     "id": 92,
     "name" : "Al-Layl",
     "name_ar" : "اللـَّيل",
     "description" : "The Night",
-    "total_verses" : 21
+    "total_verses" : 21,
+    "page_number" : 594
   },{
     "id": 93,
     "name" : "Adh-Dhuha",
     "name_ar" : "الضُّحی",
     "description" : "The Early Hours",
-    "total_verses" : 11
+    "total_verses" : 11,
+    "page_number" : 595
   },{
     "id": 94,
     "name" : "Al-Inshirah",
     "name_ar" : "الشَّرْح",
     "description" : "The Expansion",
-    "total_verses" : 8
+    "total_verses" : 8,
+    "page_number" : 595
   },{
     "id": 95,
     "name" : "At-Tin",
     "name_ar" : "التـِّين",
     "description" : "The Fig",
-    "total_verses" : 8
+    "total_verses" : 8,
+    "page_number" : 596
   },{
     "id": 96,
     "name" : "Al-‘Alaq",
     "name_ar" : "العَلـَق",
     "description" : "The Clot",
-    "total_verses" : 19
+    "total_verses" : 19,
+    "page_number" : 596
   },{
     "id": 97,
     "name" : "Al-Qadar",
     "name_ar" : "القـَدر",
     "description" : "The Majesty",
-    "total_verses" : 5
+    "total_verses" : 597
   },{
     "id": 98,
     "name" : "Al-Bayinah",
     "name_ar" : "البَيِّنَة",
     "description" : "The Proof",
-    "total_verses" : 8
+    "total_verses" : 8,
+    "page_number" : 597
   },{
     "id": 99,
     "name" : "Az-Zalzalah",
     "name_ar" : "الزلزَلة",
     "description" : "The Shaking",
-    "total_verses" : 8
+    "total_verses" : 8,
+    "page_number" : 598
   },{
     "id": 100,
     "name" : "Al-‘Adiyah",
     "name_ar" : "العَادِيات",
     "description" : "The Assaulters",
-    "total_verses" : 11
+    "total_verses" : 11,
+    "page_number" : 598
   },{
     "id": 101,
     "name" : "Al-Qari’ah",
     "name_ar" : "القارِعَة",
     "description" : "The Terrible Calamity",
-    "total_verses" : 11
+    "total_verses" : 11,
+    "page_number" : 599
   },{
     "id": 102,
     "name" : "At-Takathur",
     "name_ar" : "التَكاثـُر",
     "description" : "Worldly Gain",
-    "total_verses" : 8
+    "total_verses" : 8,
+    "page_number" : 599
   },{
     "id": 103,
     "name" : "Al-‘Asr",
     "name_ar" : "العَصْر",
     "description" : "Time",
-    "total_verses" : 3
+    "total_verses" : 3,
+    "page_number" : 600
   },{
     "id": 104,
     "name" : "Al-Humazah",
     "name_ar" : "الهُمَزَة",
     "description" : "The Slanderer",
-    "total_verses" : 9
+    "total_verses" : 9,
+    "page_number" : 600
   },{
     "id": 105,
     "name" : "Al-Fil",
     "name_ar" : "الفِيل",
     "description" : "The Elephant",
-    "total_verses" : 5
+    "total_verses" : 5,
+    "page_number" : 600
   },{
     "id": 106,
     "name" : "Quraish",
     "name_ar" : "قـُرَيْش",
     "description" : "The Quraish",
-    "total_verses" : 4
+    "total_verses" : 4,
+    "page_number" : 601
   },{
     "id": 107,
     "name" : "Al-Ma’un",
     "name_ar" : "المَاعُون",
     "description" : "The Daily Necessaries",
-    "total_verses" : 7
+    "total_verses" : 7,
+    "page_number" : 601
   },{
     "id": 108,
     "name" : "Al-Kauthar",
     "name_ar" : "الكَوْثَر",
     "description" : "Abundance",
-    "total_verses" : 3
+    "total_verses" : 3,
+    "page_number" : 601
   },{
     "id": 109,
     "name" : "Al-Kafirun",
     "name_ar" : "الكَافِرُون",
     "description" : "The Unbelievers",
-    "total_verses" : 6
+    "total_verses" : 6,
+    "page_number" : 602
   },{
     "id": 110,
     "name" : "An-Nasr",
     "name_ar" : "النـَّصر",
     "description" : "The Help",
-    "total_verses" : 3
+    "total_verses" : 3,
+    "page_number" : 602
   },{
     "id": 111,
     "name" : "Al-Masad",
     "name_ar" : "المَسَد",
     "description" : "The Palm Fibre",
-    "total_verses" : 5
+    "total_verses" : 5,
+    "page_number" : 602
   },{
     "id": 112,
     "name" : "Al-Ikhlas",
     "name_ar" : "الإخْلَاص",
     "description" : "The Unity",
-    "total_verses" : 4
+    "total_verses" : 4,
+    "page_number" : 603
   },{
     "id": 113,
     "name" : "Al-Falaq",
     "name_ar" : "الفَلَق",
     "description" : "The Daybreak",
-    "total_verses" : 5
+    "total_verses" : 5,
+    "page_number" : 603
   },{
     "id": 114,
     "name" : "An-Nas",
     "name_ar" : "النَّاس",
     "description" : "The Men",
-    "total_verses" : 6
+    "total_verses" : 6,
+    "page_number" : 603
   }]
 }
