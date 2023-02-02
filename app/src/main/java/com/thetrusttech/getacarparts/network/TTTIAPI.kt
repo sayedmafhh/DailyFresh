@@ -8,6 +8,7 @@ import com.thetrusttech.getacarparts.models.responses.items.Items
 import com.thetrusttech.getacarparts.models.responses.make.CarMake
 import com.thetrusttech.getacarparts.models.responses.model.CarModel
 import com.thetrusttech.getacarparts.ui.read_quran.model.Quran
+import okhttp3.ResponseBody
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -35,6 +36,9 @@ interface TTTIAPI {
 
     @GET("api/v4/quran/verses/indopak")
     fun getQuran(): LiveData<ApiResponse<Quran>>
+
+    @GET("api/v4/quran/verses/indopak")
+    fun getQuranImages(): LiveData<ApiResponse<ResponseBody>>
 
     @GET("api/v4/quran/verses/indopak")
     fun getZikr(): LiveData<ApiResponse<Quran>>
