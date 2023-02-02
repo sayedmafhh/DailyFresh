@@ -1,15 +1,15 @@
 package com.thetrusttech.getacarparts.ui.prayertime
 
+import android.location.Address
+import android.location.Geocoder
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.thetrusttech.getacarparts.R
 import com.thetrusttech.getacarparts.base.BaseFragment
 import com.thetrusttech.getacarparts.databinding.FragmentPrayerTimesBinding
-import com.thetrusttech.getacarparts.databinding.FragmentQuranBinding
 
 
 class PrayerTimesFragment : BaseFragment() {
@@ -29,6 +29,7 @@ class PrayerTimesFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setRecyclerview()
+        loadPrayerTime()
     }
 
     private fun setRecyclerview() {
@@ -51,6 +52,26 @@ class PrayerTimesFragment : BaseFragment() {
 
         prayerTimeAdapter.setItem(list)
 
-    }
 
+    }
+    private fun loadPrayerTime() {
+
+        val geocoder = Geocoder(requireContext())
+        val addressList: kotlin.collections.List<Address>?
+        try {
+            //addressList=geocoder.getFromLocationName(searchEditText?.getText().toString(),5)
+            addressList = geocoder.getFromLocationName("karachi", 5)
+            addressList
+            /* if (addressList!=null)
+             {
+                 val doubleLat=addressList[0].latitude
+                 val doubleLong=addressList[0].latitude
+                 val queue=Volley.newRequestQueue(this)
+                 val url = "https://api.aladhan.com/v1/calendar?latitude=" + doubleLat + "&Longitude=" + doubleLong + ""
+                 val JsonObjectRequest=JsonObjectRequest(Request.Method.GET,Url,null)
+             }*/
+        } catch (e: Exception) { // handler }
+
+        }
+    }
 }
