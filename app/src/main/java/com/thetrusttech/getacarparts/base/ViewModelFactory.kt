@@ -8,6 +8,7 @@ import com.thetrusttech.getacarparts.ui.home.ui.home.HomeViewModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemDetailsModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemsViewModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.MainViewModel
+import com.thetrusttech.getacarparts.ui.prayertime.PrayerTimeViewModel
 import com.thetrusttech.getacarparts.ui.quran.QuranViewModel
 import com.thetrusttech.getacarparts.ui.read_quran.model.ReadQuranViewModel
 
@@ -37,6 +38,9 @@ class ViewModelFactory(private val app: Application) : ViewModelProvider.Factory
             }
             modelClass.isAssignableFrom(ReadQuranViewModel::class.java) -> {
                 ReadQuranViewModel(app, repository) as T
+            }
+            modelClass.isAssignableFrom(PrayerTimeViewModel::class.java) -> {
+                PrayerTimeViewModel(app, repository) as T
             }
 
             else -> {
