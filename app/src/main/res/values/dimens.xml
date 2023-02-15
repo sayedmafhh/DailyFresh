@@ -15,4 +15,8 @@
     <dimen name="padding_8">8dp</dimen>
     <dimen name="social_icon_height">20dp</dimen>
     <dimen name="margin_90">90dp</dimen>
+
+    <dimen name="dial">205dp</dimen>
+    <dimen name="qibla">320dp</dimen>
+    <dimen name="bottom_image">180dp</dimen>
 </resources>

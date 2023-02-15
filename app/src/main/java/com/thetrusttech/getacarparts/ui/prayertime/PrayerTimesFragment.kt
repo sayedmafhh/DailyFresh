@@ -67,7 +67,8 @@ class PrayerTimesFragment : BaseFragment() {
                  val doubleLat=addressList[0].latitude
                  val doubleLong=addressList[0].latitude
                  val queue=Volley.newRequestQueue(this)
-                 val url = "https://api.aladhan.com/v1/calendar?latitude=" + doubleLat + "&Longitude=" + doubleLong + ""
+                 val url = "
+                 =" + doubleLat + "&Longitude=" + doubleLong + ""
                  val JsonObjectRequest=JsonObjectRequest(Request.Method.GET,Url,null)
              }*/
         } catch (e: Exception) { // handler }
