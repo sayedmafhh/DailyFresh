@@ -2,6 +2,7 @@ package com.thetrusttech.getacarparts.ui.profile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.thetrusttech.getacarparts.R
 
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

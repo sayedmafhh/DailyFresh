@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/background01"
-    tools:context=".ProfileActivity">
+    android:background="@drawable/bg_profile"
+    tools:context=".ui.profile.ProfileActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,13 +27,13 @@
                     android:layout_height="44dp"
                     android:padding="5dp"
                     android:layout_alignParentStart="true"
-                    android:src="@drawable/ic_arrow"/>
+                    android:src="@drawable/ic_arrow_profile"/>
                 <ImageView
                     android:layout_width="45dp"
                     android:layout_height="45dp"
                     android:padding="1dp"
                     android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_notification"/>
+                    android:src="@drawable/ic_notification_profile"/>
 
             </RelativeLayout>
 

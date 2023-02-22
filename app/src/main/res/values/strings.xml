@@ -14,11 +14,6 @@
     <string name="txt_new_user">New User? Register Now</string>
     <string name="txt_already_account">Already Have an Account? Sign In</string>
     <string name="txt_confirm_email">Confirm your email and we\'ll send the instruction.</string>
-
-    <string name="app_name">ProfileUI</string>
-
-
-    <string name="app_name">Qibla Direction</string>
     <string name="action_settings" translatable="false">Settings</string>
     <string name="compass_dial" translatable="false">Compass Dial</string>
     <string name="compass_hands" translatable="false">Compass Hands</string>
