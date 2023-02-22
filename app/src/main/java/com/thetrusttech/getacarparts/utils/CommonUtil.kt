@@ -65,6 +65,26 @@ fun SharedPreferences.contains(context: Context, prefKey: String, prefValueKey: 
     return sharedPreference.contains(prefValueKey)
 }
 
+fun <T> storeDataIntoDB(sharedpreferences: SharedPreferences, prefKey: String, data: T): Boolean {
+    val editor: SharedPreferences.Editor = sharedpreferences.edit()
+    when(data){
+        (data is Int) -> {
+            editor.putInt(prefKey, data as Int)
+        }
+        (data is Float) -> {
+            editor.putFloat(prefKey, data as Float)
+        }
+        (data is String) -> {
+            editor.putString(prefKey, data as String)
+        }
+        (data is Boolean) -> {
+            editor.putBoolean(prefKey, data as Boolean)
+        }
+    }
+    editor.apply()
+    return true
+}
+
 fun showSnackBar(view: View, message: String, length: Int) {
     var snackbar = Snackbar.make(view, message, length)
     snackbar.view.findViewById<TextView>(com.google.android.material.R.id.snackbar_text).maxLines = SNACKBAR_TEXT_MAX_LINES
@@ -208,7 +228,7 @@ class CommonUitlities {
             message: String,
             positiveText: String,
             negativeText: String? = null,
-            neutralText: String? = null
+            neutralText: String? = null,
         ) {
             val builder = AlertDialog.Builder(context)
             builder.setTitle(title)
@@ -236,12 +256,14 @@ class CommonUitlities {
             fun onAdditionalTapped(dialog: DialogInterface, position: Int)
         }
 
-        fun showPermissionAlert(context: Context,
-                                listener: IDialogListener,
-                                title: String,
-                                optionOne: String,
-                                optionTwo: String,
-                                cancelOrDeny: String) {
+        fun showPermissionAlert(
+            context: Context,
+            listener: IDialogListener,
+            title: String,
+            optionOne: String,
+            optionTwo: String,
+            cancelOrDeny: String,
+        ) {
             val builder = AlertDialog.Builder(context)
             builder.setTitle(title)
                 val options = arrayOf(optionOne, optionTwo, cancelOrDeny)
@@ -309,7 +331,7 @@ class CommonUitlities {
 
         private fun getRotatedBitmap(
             file: File,
-            selectedBitmap: Bitmap?
+            selectedBitmap: Bitmap?,
         ): Bitmap? {
             var selectedBitmap1 = selectedBitmap
             val exif = ExifInterface(file.absolutePath)

@@ -12,6 +12,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="black_2">#00000000</color>
+    <color name="black_35">#59000000</color>
+    <color name="black_50">#80000000</color>
+    <color name="blue_masjid_ref">#102533</color>
+    <color name="blue_masjid">#0C1C27</color>
+    <color name="gray_masjid_ref">#B1B1B1</color>
+    <color name="gray_masjid">#F1EFEF</color>
     <color name="gray_hint_color">#A1FF001F</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF001F</color>
