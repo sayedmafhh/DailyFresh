@@ -19,4 +19,6 @@
     <dimen name="dial">205dp</dimen>
     <dimen name="qibla">320dp</dimen>
     <dimen name="bottom_image">180dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_35sdp">35dp</dimen>
 </resources>

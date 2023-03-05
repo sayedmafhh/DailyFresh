@@ -13,13 +13,14 @@
         android:id="@+id/prayerTimesFragment"
         android:icon="@drawable/ic_prayers"
         android:title="Prayer Times" />
-    <!--<item
-        android:id="@+id/qiblaFragment"
-        android:title="Qibla" />-->
     <item
+        android:id="@+id/qiblaFragment"
+        android:icon="@drawable/ic_qibla"
+        android:title="Qibla" />
+    <!--<item
         android:id="@+id/zikrFragment"
         android:icon="@drawable/ic_zikr"
-        android:title="Zikr" />
+        android:title="Zikr" />-->
     <item
         android:id="@+id/profileFragment"
         android:icon="@drawable/ic_profile"

@@ -29,12 +29,25 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-        <ImageView
+        <!--<ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:visibility="gone"
-            android:src="@drawable/image_003" />
+            android:visibility="visible"
+            android:src="@drawable/image_003" />-->
+
+        <Button
+            android:id="@+id/openCam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="open camera"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/getImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="get image"
+            app:layout_constraintTop_toBottomOf="@id/openCam"/>
         <WebView
             android:id="@+id/web_view"
             android:layout_width="match_parent"

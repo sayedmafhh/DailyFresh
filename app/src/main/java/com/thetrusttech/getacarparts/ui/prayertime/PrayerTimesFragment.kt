@@ -167,16 +167,17 @@ class PrayerTimesFragment : BaseFragment() {
             simpleDateFormat.parse(time2).getTime() - simpleDateFormat.parse(time1).getTime()
         val minutes = difference / 1000 / 60
 
-        println("Difference in minutes: " + code.toLong() + minutes)
+        //println("Difference in minutes: " + code.toLong() + minutes)
 
         val dhuhr = data.timings.Dhuhr
         val asr = data.timings.Asr
         val maghrib = data.timings.Maghrib
         val isha = data.timings.Isha
 
-        val time: Double = 0
-        if (time > fajr && time < dhuhr)
-        binding.tvPrayerTimeRemaining.text
+
+        val time: Double = 0.0
+        /*if (time > fajr && time < dhuhr)
+        binding.tvPrayerTimeRemaining.text*/
 
         list.add(PrayerTime(0, "Fajr", convertTo12Hours(fajr)))
         list.add(PrayerTime(1, "Dhuhr", convertTo12Hours(dhuhr)))

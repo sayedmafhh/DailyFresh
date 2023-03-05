@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.thetrusttech.getacarparts.repository.GCPRepository
+import com.thetrusttech.getacarparts.ui.home.HomeFragViewModel
 import com.thetrusttech.getacarparts.ui.home.ui.home.HomeViewModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemDetailsModel
 import com.thetrusttech.getacarparts.ui.items.viewmodel.ItemsViewModel
@@ -41,6 +42,9 @@ class ViewModelFactory(private val app: Application) : ViewModelProvider.Factory
             }
             modelClass.isAssignableFrom(PrayerTimeViewModel::class.java) -> {
                 PrayerTimeViewModel(app, repository) as T
+            }
+            modelClass.isAssignableFrom(HomeFragViewModel::class.java) -> {
+                HomeFragViewModel(app, repository) as T
             }
 
             else -> {

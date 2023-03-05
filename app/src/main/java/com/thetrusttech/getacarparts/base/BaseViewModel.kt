@@ -11,7 +11,9 @@ import com.thetrusttech.getacarparts.repository.GCPRepository
  */
 open class BaseViewModel(
     private var app: Application,
-    private var repository: GCPRepository? = null
+    private var repository: GCPRepository
     ): AndroidViewModel(app) {
     fun getBaseContext(): Context = app.baseContext
+    fun getPDF(url: String) = repository.getPDF(url)
+
 }

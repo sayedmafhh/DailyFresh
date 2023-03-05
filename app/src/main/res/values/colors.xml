@@ -30,4 +30,5 @@
     <color name="bottom_nav_selected_item">@color/colorPrimary</color>
     <color name="fragment_bg_color">#FDF8F4</color>
     <color name="underline">#D8D6D6</color>
+    <color name="home_bg_khaja">#613B26</color>
 </resources>

@@ -48,6 +48,7 @@ class GCPRepository {
     fun getQuran() = DFServiceProvider.instance.getQuran()
     fun getZikr() = DFServiceProvider.instance.getZikr()
     fun getPrayerTime(url: String) = DFServiceProvider.instance.getPrayerTime(url)
+    fun getPDF(url: String) = DFServiceProvider.instance.getPDF(url)
 
     fun storeLocationIntoPref(data: String) {
         storeDataIntoDB(sharedPreference, Pref_Key_Location, data)

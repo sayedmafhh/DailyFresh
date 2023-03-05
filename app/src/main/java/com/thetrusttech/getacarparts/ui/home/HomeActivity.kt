@@ -21,16 +21,20 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.mainContainer) as NavHostFragment
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.mainContainer) as NavHostFragment
         navController = navHostFragment.navController
 
         NavigationUI.setupWithNavController(binding.bottomNavigationView, navController)
 
-        changeStatusBarColor(
-            ContextCompat.getColor(
-                applicationContext,
-                R.color.colorPrimary
-            ), false
+        var color = ContextCompat.getColor(
+            applicationContext,
+            R.color.blue_masjid
         )
+        changeStatusBarColor(
+            color, false
+        )
+
+        binding.bottomNavigationView.setBackgroundColor(color)
     }
 }

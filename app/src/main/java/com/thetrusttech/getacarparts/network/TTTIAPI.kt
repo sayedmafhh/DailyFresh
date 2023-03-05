@@ -10,6 +10,7 @@ import com.thetrusttech.getacarparts.models.responses.model.CarModel
 import com.thetrusttech.getacarparts.ui.prayertime.PrayerTime
 import com.thetrusttech.getacarparts.ui.prayertime.model.PrayerTimeResponse
 import com.thetrusttech.getacarparts.ui.read_quran.model.Quran
+import okhttp3.Response
 import okhttp3.ResponseBody
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -48,4 +49,7 @@ interface TTTIAPI {
 
     @GET()
     fun getPrayerTime(@Url url: String): LiveData<ApiResponse<PrayerTimeResponse>>
+
+    @GET()
+    fun getPDF(@Url url: String): LiveData<ApiResponse<ResponseBody>>
 }
